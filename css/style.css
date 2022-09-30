@@ -1,0 +1,71 @@
+:root{
+    --primary-color: #212121;
+    --title-color:#fff;
+    --accent-color:#2196F3;
+    --primary-bg-color:#fff;
+}
+body{
+    background-color:var(--primary-bg-color);
+    color: #757575 ;
+    font-family:Roboto, sans-serif
+}
+ul{
+    list-style: none;
+}
+.logo{
+    font-family: Raleway,sans-serif;
+}
+.site-nav-list{
+    color:var(--primary-color);
+}
+.site-nav-list:hover,
+.site-nav-list:focus{
+    color:var(--accent-color)
+}
+.site-nav-list .link.current{
+    color: var(--accent-color);
+}
+.site-contacts :hover,
+.site-contacts :focus
+.site-contacts{
+    color:var(--accent-color)
+}
+.section-title{
+    color:var(--primary-color)
+}
+.section-hero {
+    color:var(--title-color);
+    background-color: #2F303A;
+}
+.section-hero-button :hover
+.section-hero-button :focus
+.section-hero-button{
+    color: var(--title-color);
+    background-color: var(--accent-color);
+}
+.feature-list .title {
+    color: var(--primary-color);
+}
+.title{
+    color: var(--primary-color);
+}
+.title-team{
+    color: var(--primary-color);
+    background-color: #F5F4FA;
+}
+.title-name{
+    color: var(--primary-color);
+    background-color:var(--primary-bg-color);
+}
+.primery-buttom{
+    color: var(--title-color);
+    background: #2196F3;
+}
+.secondary-butoom:hover{
+    color:var(--title-color);
+    background:#2196F3 ;
+}
+.secondary-butoom{
+    color: var(--primary-color);
+    background:var(--title-color)
+}
