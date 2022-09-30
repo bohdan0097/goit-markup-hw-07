@@ -12,10 +12,11 @@ body{
 ul{
     list-style: none;
 }
-.logo{
+.site-nav-list  .logo{
+    color: var(--primary-color);
     font-family: Raleway,sans-serif;
 }
-.site-nav-list{
+.site-nav .logo{
     color:var(--primary-color);
 }
 .site-nav-list:hover,
@@ -25,10 +26,11 @@ ul{
 .site-nav-list .link.current{
     color: var(--accent-color);
 }
-.site-contacts :hover,
-.site-contacts :focus
-.site-contacts{
-    color:var(--accent-color)
+.site-nav-list .site-address{
+    color:var(--primary-color)
+}
+.site-nav-list .site-address :hover{
+    color: var(--primary-color)
 }
 .section-title{
     color:var(--primary-color)
@@ -42,6 +44,7 @@ ul{
 .section-hero-button{
     color: var(--title-color);
     background-color: var(--accent-color);
+    font-family:Roboto,inherit;
 }
 .feature-list .title {
     color: var(--primary-color);
