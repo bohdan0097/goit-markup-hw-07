@@ -14,7 +14,10 @@ ul{
 }
 .site-nav-list  .logo{
     color: var(--primary-color);
-    font-family: Raleway,sans-serif;
+    font-family: 'Raleway';
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
 }
 .site-nav .logo{
     color:var(--primary-color);
@@ -23,11 +26,22 @@ ul{
 .site-nav-list:focus{
     color:var(--accent-color)
 }
+.site-nav-list{
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
 .site-nav-list .link.current{
     color: var(--accent-color);
+    
 }
 .site-nav-list .site-address{
-    color:var(--primary-color)
+    color:var(--primary-color);
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;    
 }
 .site-nav-list .site-address :hover{
     color: var(--primary-color)
@@ -38,19 +52,30 @@ ul{
 .section-hero {
     color:var(--title-color);
     background-color: #2F303A;
+    font-family: 'Roboto';
+    font-size: 44px;
+    line-height: 60px;
 }
 .section-hero-button :hover
 .section-hero-button :focus
 .section-hero-button{
     color: var(--title-color);
     background-color: var(--accent-color);
-    font-family:Roboto,inherit;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 30px;
 }
 .feature-list .title {
     color: var(--primary-color);
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 36px
 }
 .title{
     color: var(--primary-color);
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 30px;
 }
 .title-team{
     color: var(--primary-color);
@@ -63,6 +88,10 @@ ul{
 .primery-buttom{
     color: var(--title-color);
     background: #2196F3;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
 }
 .secondary-butoom:hover{
     color:var(--title-color);
@@ -70,5 +99,16 @@ ul{
 }
 .secondary-butoom{
     color: var(--primary-color);
-    background:var(--title-color)
+    background:var(--title-color);
+    font-size: 16px;
+    font-family: 'Roboto';
+    line-height: 26px;
+    letter-spacing: 0.03em;
+}
+.site-footer{
+    color: rgb(255, 255,255,0.6);
+    font-family: 'Roboto';
+    line-height: 24px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
