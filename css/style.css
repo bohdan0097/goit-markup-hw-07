@@ -22,9 +22,12 @@ ul{
 .site-nav .logo{
     color:var(--primary-color);
 }
-.site-nav-list:hover,
-.site-nav-list:focus{
-    color:var(--accent-color)
+.site-nav-list :hover{
+    color: var(--accent-color);
+}
+.site-nav-list:focus
+.site-address:hover{
+    color: var(--accent-color);
 }
 .site-nav-list{
     font-family: 'Roboto';
