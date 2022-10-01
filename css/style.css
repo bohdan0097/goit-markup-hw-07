@@ -25,8 +25,8 @@ ul{
 .site-nav-list :hover{
     color: var(--accent-color);
 }
-.site-nav-list:focus
-.site-address:hover{
+
+.site-address :hover{
     color: var(--accent-color);
 }
 .site-nav-list{
@@ -59,20 +59,20 @@ ul{
     font-size: 44px;
     line-height: 60px;
 }
-.section-hero-button :hover
-.section-hero-button :focus
-.section-hero-button{
+.section-hero .section-hero-button{
     color: var(--title-color);
     background-color: var(--accent-color);
     font-family: 'Roboto';
     font-size: 16px;
     line-height: 30px;
 }
+.section-hero .section-hero-button:hover
+
 .feature-list .title {
     color: var(--primary-color);
     font-family: 'Roboto';
     font-size: 18px;
-    line-height: 36px
+    line-height: 36px;
 }
 .title{
     color: var(--primary-color);
