@@ -11,115 +11,127 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="site-nav-list">
-      <nav>
-        <a href="./index.html" class="logo"> <span> Web</span>Studio</a>
-        <ul class="address">
-          <li><a href="./index.html" class="link">Студія</a></li>
-          <li><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-          <li><a href="#" class="link">Контакти</a></li>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="./index.html" class="logo"> <span> Web</span>Studio</a>
+          <ul>
+            <li><a href="./index.html" class="link current">Студія</a></li>
+            <li><a href="./portfolio.html " class="link">Портфоліо</a></li>
+            <li><a href="#" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="site-adress">
+          <li>
+            <a href="mailto:info@devstudio.com" class="site-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="site-nomer">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="site-contacts">
-        <li>
-          <a href="mailto:info@devstudio.com" class="site-mail"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="site-nomer">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section>
-        <h1>Портфоліо</h1>
-        <ul>
-          <li><button type="button" class="primery-buttom">Усі</button></li>
-          <li>
-            <button type="button" class="secondary-buttom">Веб-сайти</button>
-          </li>
-          <li>
-            <button type="button" class="secondary-buttom">Додатки</button>
-          </li>
-          <li>
-            <button type="button" class="secondary-buttom">Дизайн</button>
-          </li>
-          <li>
-            <button type="button" class="secondary-buttom">Маркетинг</button>
-          </li>
-        </ul>
-        <ul class="feature-list">
-          <li>
-            <img
-              src="./images/tasc2/imgnootb.jpg"
-              alt="Ноутбук зображенням веб-сайту"
-              width="370"
-            />
-            <h2 class="feature-skill">Технокряк</h2>
-            <p class="our-teg">Веб-сайт</p>
-          </li>
-          <li>
-            <img
-              src="./images/tasc2/imgbask.jpg"
-              alt="Баскетболісти"
-              width="370"
-            />
-            <h2 class="feature-skill">Постер New Orlean vs Golden Star</h2>
-            <p class="our-teg">Дизайн</p>
-          </li>
-          <li>
-            <img
-              src="./images/tasc2/imgrest.jpg"
-              alt="Логотип ресторану"
-              width="370"
-            />
-            <h2 class="feature-skill">Ресторан Seafood</h2>
-            <p class="our-teg">Додаток</p>
-          </li>
-          <li>
-            <img
-              src="./images/tasc2/imgmusic.jpg"
-              alt="Навушники"
-              width="370"
-            />
-            <h2 class="feature-skill">Проєкт Prime</h2>
-            <p class="our-teg">Маркетинг</p>
-          </li>
-          <li>
-            <img src="./images/tasc2/imgbooks.jpg" alt="Ящики" width="370" />
-            <h2 class="feature-skill">Проєкт Boxes</h2>
-            <p class="our-teg">Додаток</p>
-          </li>
-          <li>
-            <img src="./images/tasc2/imgscreen.jpg" alt="Монітор" width="370" />
-            <h2 class="feature-skill">Inspiration has no Borders</h2>
-            <p class="our-teg">Веб-сайт</p>
-          </li>
-          <li>
-            <img src="./images/tasc2/imgbook.jpg" alt="Книга" width="370" />
-            <h2 class="feature-skill">Видання Limited Edition</h2>
-            <p class="our-teg">Дизайн</p>
-          </li>
-          <li>
-            <img src="./images/tasc2/imgtabl.jpg" alt="Бірка" width="370" />
-            <h2 class="feature-skill">Проєкт LAB</h2>
-            <p class="our-teg">Маркетинг</p>
-          </li>
-          <li>
-            <img
-              src="./images/tasc2/imgworknoon.jpg"
-              alt="Набирає текс на Ноутбіці"
-              width="370"
-            />
-            <h2 class="feature-skill">Growing Business</h2>
-            <p class="our-teg">Додаток</p>
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <section>
+          <h1>Портфоліо</h1>
+          <ul>
+            <li><button type="button" class="primery-buttom">Усі</button></li>
+            <li>
+              <button type="button" class="secondary-buttom">Веб-сайти</button>
+            </li>
+            <li>
+              <button type="button" class="secondary-buttom">Додатки</button>
+            </li>
+            <li>
+              <button type="button" class="secondary-buttom">Дизайн</button>
+            </li>
+            <li>
+              <button type="button" class="secondary-buttom">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="feature-list">
+            <li>
+              <img
+                src="./images/tasc2/imgnootb.jpg"
+                alt="Ноутбук зображенням веб-сайту"
+                width="370"
+              />
+              <h2 class="feature-skill">Технокряк</h2>
+              <p class="our-teg">Веб-сайт</p>
+            </li>
+            <li>
+              <img
+                src="./images/tasc2/imgbask.jpg"
+                alt="Баскетболісти"
+                width="370"
+              />
+              <h2 class="feature-skill">Постер New Orlean vs Golden Star</h2>
+              <p class="our-teg">Дизайн</p>
+            </li>
+            <li>
+              <img
+                src="./images/tasc2/imgrest.jpg"
+                alt="Логотип ресторану"
+                width="370"
+              />
+              <h2 class="feature-skill">Ресторан Seafood</h2>
+              <p class="our-teg">Додаток</p>
+            </li>
+            <li>
+              <img
+                src="./images/tasc2/imgmusic.jpg"
+                alt="Навушники"
+                width="370"
+              />
+              <h2 class="feature-skill">Проєкт Prime</h2>
+              <p class="our-teg">Маркетинг</p>
+            </li>
+            <li>
+              <img src="./images/tasc2/imgbooks.jpg" alt="Ящики" width="370" />
+              <h2 class="feature-skill">Проєкт Boxes</h2>
+              <p class="our-teg">Додаток</p>
+            </li>
+            <li>
+              <img
+                src="./images/tasc2/imgscreen.jpg"
+                alt="Монітор"
+                width="370"
+              />
+              <h2 class="feature-skill">Inspiration has no Borders</h2>
+              <p class="our-teg">Веб-сайт</p>
+            </li>
+            <li>
+              <img src="./images/tasc2/imgbook.jpg" alt="Книга" width="370" />
+              <h2 class="feature-skill">Видання Limited Edition</h2>
+              <p class="our-teg">Дизайн</p>
+            </li>
+            <li>
+              <img src="./images/tasc2/imgtabl.jpg" alt="Бірка" width="370" />
+              <h2 class="feature-skill">Проєкт LAB</h2>
+              <p class="our-teg">Маркетинг</p>
+            </li>
+            <li>
+              <img
+                src="./images/tasc2/imgworknoon.jpg"
+                alt="Набирає текс на Ноутбіці"
+                width="370"
+              />
+              <h2 class="feature-skill">Growing Business</h2>
+              <p class="our-teg">Додаток</p>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer class="site-footer">
       <a href="./index.html" class="logo-footer"><span>Web</span>Studio</a>
