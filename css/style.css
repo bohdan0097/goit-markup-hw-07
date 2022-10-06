@@ -99,6 +99,7 @@ ul {
     text-decoration: none;
 }
 
+
 .link:hover {
     color: var(--accent-color);
 }
