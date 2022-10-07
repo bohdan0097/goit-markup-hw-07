@@ -106,7 +106,23 @@ ul {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-
+.page-header{  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.site-adress{
+    margin-left: auto;
+    display: flex;
+}
+.link{
+    display: flex;
+    
+}
+.img-work{
+    display: flex
+}
 
 .link:hover {
     color: var(--accent-color);
