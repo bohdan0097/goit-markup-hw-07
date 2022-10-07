@@ -40,8 +40,8 @@ h4
 h5
 p
 ul{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 ul {
@@ -53,6 +53,7 @@ ul {
 }
 
 .logo {
+    display: flex;
     color: var(--primary-color);
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -106,22 +107,38 @@ ul {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-.page-header{  
+
+.site-adress {
+    display: flex;
+    margin: 50px;
+}
+.site-adress li:not(last-child) {
+    margin-left: 50px;
+}
+.header-nav li{
+    background-color: #2196 F3;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.header-nav{
+    display: flex;
+}
+.header-nav li:last-child{
+    margin-right: 50px;
+}
+.header-nav li:not(last-child){ 
+    margin-right: 50px;
+}
+.page-header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
-}
-.site-adress{
-    margin-left: auto;
-    display: flex;
-}
-.link{
-    display: flex;
-    
+    justify-content: flex-end
 }
 .img-work{
     display: flex
+}
+.img-work li{
+    margin-right: 30px;
 }
 
 .link:hover {
