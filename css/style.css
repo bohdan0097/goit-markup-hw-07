@@ -32,8 +32,16 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
-
+}
+h1
+h2
+h3
+h4
+h5
+p
+ul{
+    padding: 0;
+    margin: 0;
 }
 
 ul {
@@ -203,13 +211,11 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-
 .feature-text {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
-
 .feature-work {
     color: var(--primary-color);
     font-weight: 700;
@@ -217,16 +223,13 @@ ul {
     letter-spacing: 0.03em;
     text-align: center;
 }
-.img-work{
-    display: inline-block
-}
-
 .title-team .title-feature {
     color: var(--primary-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
 .title-team .acquaintance {
