@@ -16,6 +16,7 @@ html {
     --primery-sec: #757575;
     --bg: #2F303A;
     --object-color: #188CE8;
+    --border:#EEEEEE;
 }
 
 
@@ -49,6 +50,13 @@ ul {
 .site-nav-list li {
     color: var(--primary-color);
 }
+image{
+    display: block;
+    max-width: 100%;
+}
+header{
+    border-bottom: 1px solid var(--border)
+}
 
 .logo {
     margin-top:0px;
@@ -62,10 +70,8 @@ ul {
     letter-spacing: 0.03em;
     text-decoration: none
 }
-
 .logo-footer {
     display:flex;
-    margin-top: 60px;
     color: var(--primary-bg-color);
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -110,6 +116,9 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
+}
+.page-header{
+    border-bottom:red
 }
 
 .page-header ul{
@@ -315,10 +324,18 @@ ul {
 .feature-work li:nth-child(3n){
     margin-right: 0px;
 }
+.title-team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .title-team ul{
     padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .title-team .title-feature {
+    margin-top: 0px;
+    margin-bottom: 50px;
     color: var(--primary-color);
     font-weight: 700;
     font-size: 36px;
@@ -326,22 +343,29 @@ ul {
     letter-spacing: 0.03em;
     text-align: center;
 }
-.title-team .acquaintance{
-    display:inline-block ;
+.acquaintance{
+    display:inline-block;
     margin-right: 30px;
     padding: 0px;
-    margin-bottom: 94px;
+    margin-bottom: 0px;
+    width: 270px;
     background-color: var(--primary-bg-color);
 }
 .title-team .acquaintance:last-child{
     margin-right: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 .title-team { 
     color: var(--primary-color);
     background-color: var(--secondary-bg);
 }
-
+.title-team .team-description{
+    padding: 30px;
+}
 .title-name {
+    margin-top: 0px;
+    margin-bottom: 0px;
     color: var(--primary-color);
     font-weight: 500;
     font-size: 16px;
@@ -350,58 +374,74 @@ ul {
 }
 
 .title-work {
+    margin-top: 10px;
+    margin-bottom: 0px;
     color: var(--primery-sec);
     font-size: 16px;
     line-height: 1.1;
     letter-spacing: 0.03em;
 }
 .part{
-    padding-top: 135px;
-    padding-bottom: 53px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
-.part .btn{
+.part h1{
+    visibility: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+.part ul{
+    margin: 0px;
+    padding: 0px;
+}
+.btn{
+    margin: 0px;
+    padding: 0px;
     display: flex;
     justify-content: center;
+    border: none;
 }
-
+.btn li{
+    margin-right: 30px;
+}
+.btn li:last-child{
+    margin-right: 0px;
+}
 .primery-buttom {
+    padding: 6px 22px;
     color: var(--title-color);
     background-color: var(--accent-color);
-    width: 73px;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-    border-radius: 4px;
 }
 
 .primery-buttom {
     cursor: pointer;
-    margin-right: 30px;
 }
 .secondary-buttom:hover {
     color: var(--title-color);
     background-color: var(--accent-color);
 }
-
 .secondary-buttom {
-    margin-right: 30px;
+    padding: 6px 22px;
     color: var(--primary-color);
     background: var(--secondary-bg);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-    border-radius: 4px;
 }
 .feature-list{
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
-    margin-top: 34px;
-    margin-bottom: 94px;
-
+    margin-top: 0px;
+    margin-bottom: -30px;
+    margin-right: -30px;
 }
-.feature-list li{
+.title-web{
+    width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -414,8 +454,8 @@ ul {
 .presentation-work{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 34px;
-    margin-bottom: 94px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     padding: 0px;
     padding-bottom: 94px;
 }
@@ -427,20 +467,29 @@ ul {
 }
 
 .feature-skill {
+    margin-top: 0px;
+    margin-bottom: 4px;
     color: var(--primary-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
-
 .our-teg {
+    margin: 0px;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
 }
+.teg-name{
+    border-bottom: 1px solid  var(--border);
+    border-left: 1px solid  var(--border);
+    border-right: 1px solid  var(--border);
+}
 
 .site-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     color: var(--title-color);
     background-color: var(--bg);
@@ -449,10 +498,19 @@ ul {
     letter-spacing: 0.03em;
 }
 .address {
+    margin-top: 20px;
     color: var(--title-color);
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     font-style: normal;
     text-decoration: none;
+}
+.site-footer li{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 9px;
+}
+.site-footer li:not(last-child){
+    margin-bottom: 0px;
 }
