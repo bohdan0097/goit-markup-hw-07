@@ -43,11 +43,12 @@ ul{
     padding: 0px;
     margin: 0px;
 }
-
-ul {
+ul{
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
-.site-nav-list li {
+.nav-link {
     color: var(--primary-color);
 }
 image{
@@ -68,7 +69,8 @@ header{
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    text-decoration: none
+    text-decoration: none;
+    padding: 24px 0px;
 }
 .logo-footer {
     display:flex;
@@ -96,19 +98,11 @@ header{
     color: var(--accent-color);
 }
 
-.nav {
-    color: var(--primary-color);
-}
-
-.site-address {
-    color: var(--primary-color);
-}
-
-.link.current {
+.nav-link.current {
     color: var(--accent-color);
 }
 
-.link{
+.nav-link{
     display: flex;
     color:var(--primary-color);
     font-size: 14px;
@@ -116,53 +110,36 @@ header{
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
+    padding: 32px;
 }
 .page-header{
-    border-bottom:red
-}
-
-.page-header ul{
-    padding: 0px;
-    margin: 0px;
+    display: flex;
+    height: 80px;
+    align-self:center
 }
 .page-header .site-adress {
     display: flex;
     margin-left: auto;
-    padding: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+    align-content: center;
+    padding: 32px;
 }
 .site-adress li:not(last-child) {
     margin-left: 50px
 }
-.site-adress li:first-child{
-    margin-left: 0px;
+.header-nav li:not( :last-child) {
+    margin-right:50px
 }
-.header-nav li{
+.header-nav {
     display: flex;
     padding: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
 }
-.header-nav li:not(last-child){
-    margin-right: 50px;
-}
-.header-nav{
-    display: flex;
-    align-content: center;
-}
-.header-nav li:last-child{
-    margin-right: 50px;
-}
-.header-nav li:not(last-child){ 
-    margin-right: 50px;
-}
-.page-header {
-    display: flex;
-    align-items: center;
 
-    width: 1200px;
-    height: 80px;
+.header-nav.nav-link:not(:last-child){
+    margin-right: 50px;
 }
 .img-work{
     display: flex;
@@ -175,11 +152,11 @@ header{
     padding: 0px;
 }
 
-.link:hover {
+.nav-link:hover {
     color: var(--accent-color);
 }
 
-.link:focus {
+.nav-link:focus {
     color: var(--accent-color);
 }
 
@@ -229,7 +206,7 @@ header{
 
 .section-hero {
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
     background-color: var(--bg);
     text-align: center;
 }
@@ -261,6 +238,7 @@ header{
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
+    border-radius: 4px;
 }
 .section-hero-button {
     cursor: pointer;
@@ -280,18 +258,21 @@ header{
 .description  .skils{
     display: flex;
     justify-content: center;
-    margin-right: 30px;
     padding: 0px;
 }
 .description h2{
-    visibility: hidden;
     margin-top: 0px;
     margin-bottom: 0px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
-.description li{
+.description.skils-itm{
     width: 270px;
 }
-.description  li:not(:last-child){
+.description.skils-itm:not(:last-child){
     margin-right: 30px;
 }
 .title {
@@ -317,7 +298,8 @@ header{
     padding: 0px;
     color: var(--primary-color);
     font-weight: 700;
-    font-size: 1.2;
+    font-size: 36px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
 }
@@ -343,16 +325,17 @@ header{
     letter-spacing: 0.03em;
     text-align: center;
 }
+.time-llist{
+    display: flex;
+}
 .acquaintance{
-    display:inline-block;
     margin-right: 30px;
     padding: 0px;
     margin-bottom: 0px;
     width: 270px;
     background-color: var(--primary-bg-color);
 }
-.title-team .acquaintance:last-child{
-    margin-right: 0px;
+.acquaintance:last-child{
     margin: 0px;
     padding: 0px;
 }
@@ -386,9 +369,13 @@ header{
     padding-bottom: 94px;
 }
 .part h1{
-    visibility: hidden;
-    padding: 0px;
-    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 .part ul{
     margin: 0px;
@@ -399,12 +386,12 @@ header{
     padding: 0px;
     display: flex;
     justify-content: center;
-    border: none;
 }
-.btn li{
-    margin-right: 30px;
+.btn-itm{
+    margin-right: 8px;
+    margin-bottom: 50px;
 }
-.btn li:last-child{
+.btn-itm:last-child{
     margin-right: 0px;
 }
 .primery-buttom {
@@ -414,6 +401,8 @@ header{
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
 }
 
 .primery-buttom {
@@ -422,7 +411,14 @@ header{
 .secondary-buttom:hover {
     color: var(--title-color);
     background-color: var(--accent-color);
+    box-shadow: 4px;
 }
+.secondary-buttom:focus {
+    color: var(--title-color);
+    background-color: var(--accent-color);
+    box-shadow: 4px;
+}
+
 .secondary-buttom {
     padding: 6px 22px;
     color: var(--primary-color);
@@ -431,6 +427,8 @@ header{
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
 }
 .feature-list{
     display: flex;
@@ -506,11 +504,14 @@ header{
     font-style: normal;
     text-decoration: none;
 }
-.site-footer li{
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 9px;
+.address-footer{
+    margin-top: 20px;
 }
-.site-footer li:not(last-child){
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.site-footer li:not(:last-child){
     margin-bottom: 0px;
 }

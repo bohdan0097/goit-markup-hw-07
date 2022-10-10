@@ -19,31 +19,27 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="page-header">
-          <nav>
-            <a href="./index.html" class="logo"> <span> Web</span>Studio</a>
-          </nav>
+      <div class="container page-header">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo"> <span> Web</span>Studio</a>
           <ul class="header-nav">
-            <li><a href="./index.html" class="link">Студія</a></li>
+            <li><a href="./index.html" class="nav-link current">Студія</a></li>
             <li>
-              <a href="./portfolio.html " class="link current">Портфоліо</a>
+              <a href="./portfolio.html " class="nav-link">Портфоліо</a>
             </li>
-            <li><a href="#" class="link">Контакти</a></li>
+            <li><a href="#" class="nav-link">Контакти</a></li>
           </ul>
-          <ul class="site-adress">
-            <li>
-              <a href="mailto:info@devstudio.com" class="site-mail"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+380961111111" class="site-nomer"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>
+        </nav>
+        <ul class="site-adress">
+          <li>
+            <a href="mailto:info@devstudio.com" class="site-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="site-nomer">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -51,17 +47,19 @@
         <div class="container">
           <h1>Портфоліо</h1>
           <ul class="btn">
-            <li><button type="button" class="primery-buttom">Усі</button></li>
-            <li>
+            <li class="btn-itm">
+              <button type="button" class="primery-buttom">Усі</button>
+            </li>
+            <li class="btn-itm">
               <button type="button" class="secondary-buttom">Веб-сайти</button>
             </li>
-            <li>
+            <li class="btn-itm">
               <button type="button" class="secondary-buttom">Додатки</button>
             </li>
-            <li>
+            <li class="btn-itm">
               <button type="button" class="secondary-buttom">Дизайн</button>
             </li>
-            <li>
+            <li class="btn-itm">
               <button type="button" class="secondary-buttom">Маркетинг</button>
             </li>
           </ul>
