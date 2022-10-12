@@ -349,6 +349,7 @@ header{
 }
 .title-team .team-description{
     padding: 30px;
+    text-align: center;
 }
 .title-name {
     margin-top: 0px;
@@ -387,10 +388,11 @@ header{
     padding: 0px;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .btn-itm{
     margin-right: 8px;
-    margin-bottom: 50px;
+
 }
 .btn-itm:last-child{
     margin-right: 0px;
@@ -478,6 +480,7 @@ header{
     border-bottom: 1px solid  var(--border);
     border-left: 1px solid  var(--border);
     border-right: 1px solid  var(--border);
+    padding: 20px 24px;
 }
 
 .site-footer {
