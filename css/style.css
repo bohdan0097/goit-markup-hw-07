@@ -230,6 +230,18 @@ header{
     text-transform: uppercase;
     justify-content:center
 }
+.section-hero{
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid black;
+    background-image: radial-gradient(
+        red
+        
+    )
+    background-size:center;
+}
 
 .section-hero-button {
     height: 50px;
