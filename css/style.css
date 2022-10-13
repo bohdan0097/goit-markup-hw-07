@@ -173,6 +173,15 @@ header{
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+.site-link::before{
+    content: "";
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    border-radius: 0px;
+    background-image: url(../images/mail.png);
+    background-size: contain;
+}
 
 .site-link:hover {
     color: var(--accent-color);
@@ -228,19 +237,16 @@ header{
     line-height: 1.3;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    justify-content:center
+    justify-content:center;
 }
+
 .section-hero{
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid black;
-    background-image: radial-gradient(
-        red
-        
-    )
-    background-size:center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/Img-hed.jpg');
 }
 
 .section-hero-button {
@@ -287,6 +293,19 @@ header{
 }
 .skils-itm{
     width: 270px;
+}
+.skils-itm::before {
+    display: block;
+    height: 120px;
+    content: "";
+    background-size: contain;
+    background-color: var(--secondary-bg);
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.icone-d::before{
+    background-image:url(../images/antenna\ 1\ \(1\)\ \(1\).jpg);
 }
 .description.skils-itm:not(:last-child){
     margin-right: 30px;
