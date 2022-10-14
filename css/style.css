@@ -154,6 +154,19 @@ header{
     margin-right: 30px;
     padding: 0px;
 }
+.soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.soc-itm{
+    height: 44px;
+    width: 44px;
+    background-color: var(--primary-bg-color);
+    display: block;
+    border-radius: 50%;
+    margin-top: 16px;
+}
 
 .nav-link:hover {
     color: var(--accent-color);
@@ -304,6 +317,9 @@ header{
     border-radius: 4px;
     margin-bottom: 30px;
 }
+.icon-ant ::before{
+    background: url(../images/antenna\ 1\ \(1\)\ \(1\).jpg);
+background-color: red;}
 .icone-d::before{
     background-image:url(../images/antenna\ 1\ \(1\)\ \(1\).jpg);
 }
