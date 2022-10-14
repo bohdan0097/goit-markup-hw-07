@@ -14,6 +14,7 @@ html {
     --primary-bg-color: #fff;
     --secondary-bg: #F5F4FA;
     --primery-sec: #757575;
+    --soccial-icon: #AFB1B8;
     --bg: #2F303A;
     --object-color: #188CE8;
     --border:#EEEEEE;
@@ -163,9 +164,26 @@ header{
     height: 44px;
     width: 44px;
     background-color: var(--primary-bg-color);
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     margin-top: 16px;
+}
+.soc-itm:hover{
+    background-color: var(--accent-color);
+}
+.soc-itm:hover .social-img{
+    fill: var(--primary-bg-color);
+}
+.soc-itm:focus{
+    background-color: var(--accent-color);
+}
+.soc-itm:focus .social-img{
+    fill: var(--primary-bg-color);
+}
+.social-img{
+    fill: var(--soccial-icon)
 }
 
 .nav-link:hover {
@@ -317,12 +335,11 @@ header{
     border-radius: 4px;
     margin-bottom: 30px;
 }
-.icon-ant ::before{
-    background: url(../images/antenna\ 1\ \(1\)\ \(1\).jpg);
-background-color: red;}
-.icone-d::before{
-    background-image:url(../images/antenna\ 1\ \(1\)\ \(1\).jpg);
+.icon-skill::before{
+    display: flex;
+    justify-content: center;
 }
+
 .description.skils-itm:not(:last-child){
     margin-right: 30px;
 }
@@ -366,7 +383,7 @@ background-color: red;}
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.title-team .title-feature {
+.title-feature {
     margin-top: 0px;
     margin-bottom: 50px;
     color: var(--primary-color);
@@ -378,6 +395,25 @@ background-color: red;}
 }
 .time-llist{
     display: flex;
+}
+.clients{
+
+}
+.clients-list{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.clients-link{
+    width: 170px;
+    height: 92px;
+    border: 2px solid var(--soccial-icon);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 94px;
+}
+.clients-img{
 }
 .acquaintance{
     margin-right: 30px;
@@ -559,4 +595,25 @@ background-color: red;}
 }
 .site-footer li:not(:last-child){
     margin-bottom: 0px;
+}
+.site-footer.footer-social{
+    height: 80px;
+    width: 206px;
+    justify-content: center;
+    text-decoration: none;
+}
+.soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.soc-itm{
+    height: 44px;
+    width: 44px;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 16px;
 }
