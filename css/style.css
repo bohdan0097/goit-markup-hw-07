@@ -129,6 +129,17 @@ header{
     margin-bottom: 0px;
     align-content: center;
 }
+.header-icon{
+    display: flex;
+    fill: var(--primery-sec);
+    align-items: center;
+    height: 16px;
+    width: 10px;
+    margin-right: 10px;
+}
+.header-icon:hover {
+    fill:var(--accent-color) ;
+}
 .site-adress li:not(:first-child) {
     margin-left: 50px
 }
@@ -159,6 +170,7 @@ header{
     display: flex;
     justify-content: center;
     gap: 10px;
+    text-decoration: none;
 }
 .soc-itm{
     height: 44px;
@@ -203,17 +215,9 @@ header{
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
+    align-items: center;
+    justify-content: center;
 }
-.site-link::before{
-    content: "";
-    height: 12px;
-    width: 16px;
-    margin-right: 10px;
-    border-radius: 0px;
-    background-image: url(../images/mail.png);
-    background-size: contain;
-}
-
 .site-link:hover {
     color: var(--accent-color);
 }
@@ -269,6 +273,7 @@ header{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     justify-content:center;
+    background: none;
 }
 
 .section-hero{
@@ -323,23 +328,23 @@ header{
     width: 1px;
 }
 .skils-itm{
-    width: 270px;
-}
-.skils-itm::before {
-    display: block;
-    height: 120px;
-    content: "";
-    background-size: contain;
-    background-color: var(--secondary-bg);
-    background-position: center;
-    border-radius: 4px;
-    margin-bottom: 30px;
-}
-.icon-skill::before{
     display: flex;
+    width: 270px;
+    height: 120px;
+    align-items: center;
     justify-content: center;
+    background-color: var(--secondary-bg);
+    margin-bottom: 10px;
 }
 
+.skill-icon {
+    height: 70px;
+    width: 70px;
+    border-radius:4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .description.skils-itm:not(:last-child){
     margin-right: 30px;
 }
@@ -397,23 +402,39 @@ header{
     display: flex;
 }
 .clients{
-
+    padding-top: 94px;
 }
 .clients-list{
+    width: calc((100% - 170 px) / 6);
     display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
+    gap: 30px;
 }
-.clients-link{
+.clients-link {
+    border: 2px solid var(--soccial-icon);
     width: 170px;
     height: 92px;
-    border: 2px solid var(--soccial-icon);
+    margin-bottom: 94px;
+    justify-content: center;
+    align-items: center;
+}
+.clients-link {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.clients-img {
+    height: 60px;
+    width: 106px;
+    fill: var(--soccial-icon);
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 94px;
 }
-.clients-img{
+.clients-link:hover{
+    border: 2px solid var(--accent-color);;
+}
+.clients-link:hover .clients-img{
+    fill:var(--accent-color);
 }
 .acquaintance{
     margin-right: 30px;
@@ -596,24 +617,50 @@ header{
 .site-footer li:not(:last-child){
     margin-bottom: 0px;
 }
-.site-footer.footer-social{
+.footer-social{
+    display: flex;
     height: 80px;
     width: 206px;
     justify-content: center;
-    text-decoration: none;
+    margin-left: 70px;
+    gap: 10px;
+    list-style-type: none;
+    list-style: none;
 }
-.soc-list {
+.soc-we{
     display: flex;
     justify-content: center;
     gap: 10px;
+    list-style-type: none;
+    list-style: none;
 }
-.soc-itm{
+.footer-itm{
     height: 44px;
     width: 44px;
-    background-color: var(--primary-bg-color);
+    fill: var(--primary-bg-color);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     margin-top: 16px;
 }
+.footer-zone{
+    display: flex;
+    align-items: baseline;
+}
+.footer-text{
+    height: 16px;
+    width: 116px;
+}
+.footer-itm:hover{
+    background-color: var(--accent-color);
+}
+.footer-itm .footer-itm{
+    fill: var(--primary-bg-color);
+}
+.footer-itm:focus{
+    background-color: var(--accent-color);
+}
+.footer-itm .footer-itm{
+    fill: var(--primary-bg-color)}
