@@ -133,11 +133,9 @@ header{
     display: flex;
     fill: var(--primery-sec);
     align-items: center;
-    height: 16px;
-    width: 10px;
     margin-right: 10px;
 }
-.header-icon:hover {
+.site-adress:hover {
     fill:var(--accent-color) ;
 }
 .site-adress li:not(:first-child) {
@@ -168,9 +166,8 @@ header{
 }
 .soc-list {
     display: flex;
-    justify-content: center;
     gap: 10px;
-    text-decoration: none;
+    margin-top: 16px;
 }
 .soc-itm{
     height: 44px;
@@ -180,7 +177,7 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin-top: 16px;
+     margin-top: 16px;
 }
 .soc-itm:hover{
     background-color: var(--accent-color);
@@ -218,14 +215,18 @@ header{
     align-items: center;
     justify-content: center;
 }
-.site-link:hover {
+.site-adress:hover .header-icon{
     color: var(--accent-color);
+    fill: var(--accent-color);
+}
+.site-link:focus .header-icon{
+    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .site-link:focus {
     color: var(--accent-color);
 }
-
 .footer-contact {
     color: var(--footer);
     font-size: 14px;
@@ -334,7 +335,7 @@ header{
     align-items: center;
     justify-content: center;
     background-color: var(--secondary-bg);
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .skill-icon {
@@ -403,6 +404,7 @@ header{
 }
 .clients{
     padding-top: 94px;
+    padding-bottom: 98px;
 }
 .clients-list{
     width: calc((100% - 170 px) / 6);
@@ -410,17 +412,16 @@ header{
     gap: 30px;
 }
 .clients-link {
-    border: 2px solid var(--soccial-icon);
+    border: 1px solid var(--soccial-icon);
     width: 170px;
     height: 92px;
-    margin-bottom: 94px;
     justify-content: center;
     align-items: center;
 }
 .clients-link {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
 }
 .clients-img {
     height: 60px;
@@ -431,9 +432,15 @@ header{
     justify-content: center;
 }
 .clients-link:hover{
-    border: 2px solid var(--accent-color);;
+    border: 1px solid var(--accent-color);;
 }
 .clients-link:hover .clients-img{
+    fill:var(--accent-color);
+}
+.clients-link:focus{
+    border-color:  1px solid var(--accent-color);
+}
+.clients-link:focus .clients-img{
     fill:var(--accent-color);
 }
 .acquaintance{
@@ -514,16 +521,19 @@ header{
 
 .primery-buttom {
     cursor: pointer;
+    box-shadow: 0px 2px 0px 0px var(--primery-sec);
 }
 .secondary-buttom:hover {
     color: var(--title-color);
     background-color: var(--accent-color);
     box-shadow: 4px;
+    box-shadow: 0px 2px 0px 0px var(--primery-sec);
 }
 .secondary-buttom:focus {
     color: var(--title-color);
     background-color: var(--accent-color);
     box-shadow: 4px;
+    box-shadow: 0px 2px 0px 0px var(--primery-sec);
 }
 
 .secondary-buttom {
@@ -580,11 +590,23 @@ header{
     line-height: 1.8;
     letter-spacing: 0.03em;
 }
+.feature-tegline{
+    text-decoration: none;
+    color: var(--primery-sec);
+ 
+}
+.feature-tegline:focus{
+    box-shadow: 8px 16px 0px -2px rgba(0,0,0,0.75);
+}
+.feature-tegline:hover{
+    box-shadow: 8px 16px 0px -2px rgba(0,0,0,0.75);
+}
 .teg-name{
     border-bottom: 1px solid  var(--border);
     border-left: 1px solid  var(--border);
     border-right: 1px solid  var(--border);
     padding: 20px 24px;
+    text-decoration: none;
 }
 
 .site-footer {
@@ -621,7 +643,7 @@ header{
     display: flex;
     height: 80px;
     width: 206px;
-    justify-content: center;
+    align-items: center;
     margin-left: 70px;
     gap: 10px;
     list-style-type: none;
@@ -633,25 +655,33 @@ header{
     gap: 10px;
     list-style-type: none;
     list-style: none;
+    margin-top: 20px;
 }
 .footer-itm{
     height: 44px;
     width: 44px;
     fill: var(--primary-bg-color);
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin-top: 16px;
 }
 .footer-zone{
     display: flex;
     align-items: baseline;
 }
 .footer-text{
+    margin: 0px;
     height: 16px;
     width: 116px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
 }
 .footer-itm:hover{
     background-color: var(--accent-color);
