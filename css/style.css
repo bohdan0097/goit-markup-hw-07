@@ -179,7 +179,6 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-     margin-top: 16px;
 }
 .soc-itm:hover{
     background-color: var(--accent-color);
