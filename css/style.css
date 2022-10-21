@@ -299,6 +299,7 @@ header{
     line-height: 1.8;
     letter-spacing: 0.06em;
     border-radius: 4px;
+    transition:color 250ms,background-color 250ms;
 }
 .section-hero-button {
     cursor: pointer;
@@ -311,13 +312,14 @@ header{
 .section-hero-button:focus {
     background-color: var(--accent-color)
 }
+/*///*modal*/
 .backdroop{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background-color:  rgba(0, 0, 0, 0.2);;
 }
 .backdroop.is-hidden{
     opacity: 0;
@@ -330,10 +332,17 @@ header{
     transform:translate(-50%, -50%) ;
     width: 528px;
     height: 581px;
-    background: var(--title-color);
+    background-color: var(--title-color);;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
+}
+.modal-button{
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    background-image:url(../images/close.svg);
+    border-radius: 50%;
 }
 .description{
     padding-top: 94px;
@@ -540,6 +549,7 @@ header{
     letter-spacing: 0.03em;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms color 250ms;
 }
 
 .primery-buttom {
@@ -562,6 +572,7 @@ header{
     letter-spacing: 0.03em;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms color 250ms;
 }
 .feature-list{
     display: flex;
