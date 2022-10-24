@@ -90,7 +90,6 @@ header{
     text-decoration: none;
     
 }
-
 .logo-footer span {
     color: var(--accent-color);
 }
@@ -98,15 +97,9 @@ header{
 .site-nav .logo {
     color: var(--primary-color);
 }
-
 .logo span {
     color: var(--accent-color);
 }
-
-.page-header :hover {
-    color: var(--accent-color);
-}
-
 .nav-link.current {
     color: var(--accent-color);
 }
@@ -138,7 +131,6 @@ header{
 .nav-link.current:after{
     opacity: 1;
 }
-
 .page-header{
     display: flex;
     height: 80px;
@@ -157,9 +149,6 @@ header{
     align-items: center;
     margin-right: 10px;
 }
-.site-adress:hover {
-    fill:var(--accent-color) ;
-}
 .site-adress li:not(:first-child) {
     margin-left: 50px
 }
@@ -172,7 +161,6 @@ header{
     margin-bottom: 0px;
     margin-top: 0px;
 }
-
 .header-nav.nav-link:not(:last-child){
     margin-right: 50px;
 }
@@ -201,7 +189,7 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition-property: background-color;
+    transition-property: background-color,fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -230,7 +218,6 @@ header{
     color: var(--accent-color);
     transition: background-color 250ms color 250ms, box-shadow 250ms ;
 }
-
 .site-link{
     display: flex;
     padding: 32px 0px;
@@ -248,17 +235,17 @@ header{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-.site-adress:hover .header-icon{
+.site-link:hover,
+.site-link:focus{
+    color: var(--accent-color);
+}
+.site-link:hover .header-icon{
     color: var(--accent-color);
     fill: var(--accent-color);
 }
 .site-link:focus .header-icon{
     color: var(--accent-color);
     fill: var(--accent-color);
-}
-
-.site-link:focus {
-    color: var(--accent-color);
 }
 .footer-contact {
     color: var(--footer);
@@ -357,7 +344,7 @@ header{
     width: 100%;
     height: 100%;
     background-color:  rgba(0, 0, 0, 0.2);;
-    transition-property: opacity;
+    transition-property: opacity, visibility;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -378,7 +365,8 @@ header{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .modal-button{
-    display: flex;
+    background-color:var(--primary-bg-color);
+    cursor: pointer;
     position: absolute;
     top: 8px;
     right: 8px;
@@ -392,7 +380,16 @@ header{
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button:hover{
+.close-modal{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    cursor: pointer;
+    align-items: center;
+}
+.modal-button:hover,
+.modal-button:focus{
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
@@ -465,6 +462,8 @@ header{
     text-align: center;
 }
 .presentation-text{
+    display: flex;
+    align-items: center;
     position: absolute;
     width: 370px;
     height: 70px;
@@ -481,9 +480,6 @@ header{
     color: var(--primary-bg-color);
     background-color: rgba(47, 48, 58, 0.8);
     transform: translateY(-100%);
-}
-.about-presentation{
-    margin: 27px;
 }
 .feature-work li:nth-child(3n){
     margin-right: 0px;
@@ -527,6 +523,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .clients-img {
     height: 60px;
@@ -535,7 +535,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-property: fill;
+    transition-property: fill,border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -671,15 +671,15 @@ header{
 .feature-project{
     position: relative;
     width: 370px;
-    height: 294px;
     overflow: hidden;
 }
 .tegline-text{
     position: absolute;
     top: 0;
     left: 0;
+    margin: 0;
     width: 370px;
-    height: 294px;
+    height: 295px;
     padding: 63px 24px;
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
@@ -687,19 +687,16 @@ header{
     font-size: 18px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    opacity: 0;
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.title-web:hover .tegline-text{
+.feature-tegline:hover .tegline-text{
     transform: translateY(0);
-    opacity: 1;
 }
-.title-web:focus .tegline-text{
+.feature-tegline:focus .tegline-text{
     transform: translateY(0);
-    opacity: 1;
 }
 .presentation-work{
     display: flex;
@@ -714,8 +711,10 @@ header{
 }
 .secondary-buttom {
     cursor: pointer;
+    transition-property: color,background-color,box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .feature-skill {
     margin-top: 0px;
     margin-bottom: 4px;
@@ -724,7 +723,6 @@ header{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    
 }
 .our-teg {
     margin: 0px;
@@ -732,7 +730,6 @@ header{
     line-height: 1.8;
     letter-spacing: 0.03em;
 }
-
 .feature-tegline{
     text-decoration: none;
     color: var(--primery-sec);
@@ -779,6 +776,9 @@ header{
     display: flex;
     flex-direction: column;
     gap: 9px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-footer li:not(:last-child){
     margin-bottom: 0px;
@@ -805,7 +805,7 @@ header{
     height: 44px;
     width: 44px;
     fill: var(--primary-bg-color);
-    background-color: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
