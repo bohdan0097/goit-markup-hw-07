@@ -189,7 +189,7 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition-property: background-color,fill;
+    transition-property: background-color,;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -206,7 +206,11 @@ header{
     fill: var(--primary-bg-color);
 }
 .social-img{
-    fill: var(--soccial-icon)
+    fill: var(--soccial-icon);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .nav-link:hover {
@@ -480,6 +484,9 @@ header{
     color: var(--primary-bg-color);
     background-color: rgba(47, 48, 58, 0.8);
     transform: translateY(-100%);
+}
+.about-presentation{
+    margin: 0;
 }
 .feature-work li:nth-child(3n){
     margin-right: 0px;
