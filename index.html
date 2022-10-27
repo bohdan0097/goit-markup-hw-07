@@ -394,7 +394,7 @@
             <use href="./images/close.svg#icon-close-1"></use>
           </svg>
         </button> 
-        <h2 >Залиште свої дані, ми вам передзвонимо</h2>
+        <h2 class="" >Залиште свої дані, ми вам передзвонимо</h2>
         <form name="contact-form">
           <label class="modal-label" for="person-name">Ім'я</label>
           <div class="modal-control">
@@ -418,8 +418,15 @@
             </svg>
           </div>
           <label class="modal-label" for="person-mail">Коментар</label>
-            <textarea  class="modal-person" name="person-coment" id="person-coment" cols="30" rows="10" 
+            <textarea  class="modal-textarea" name="person-coment" id="person-coment" cols="30" rows="10" 
             placeholder="Введіть текст"></textarea>
+
+          <input class="cheackbox-input" id="tearms-cheackbox" type="checkbox" name="tearms-cheackbox">
+          <label class="cheackbox-label" for="tearms-cheackbox">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+
+          <button type="button"  class="section-modal-button" type="submit">
+            Відправити
+          </button>
         </form>
       </div>
     </div>
