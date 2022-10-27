@@ -19,6 +19,7 @@ html {
     --object-color: #188CE8;
     --border:#EEEEEE;
     --footer: rgba(255, 255, 255, 0.6);
+    --modal-border:rgba(33, 33, 33, 0.2);
 }
 
 
@@ -364,8 +365,10 @@ header{
     transform:translate(-50%, -50%) ;
     width: 528px;
     height: 581px;
-    background-color: var(--title-color);;
+    background-color: var(--title-color);
+    overflow: auto;
     border-radius: 4px;
+    padding: 40px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .modal-button{
@@ -391,12 +394,49 @@ header{
     padding: 0px;
     cursor: pointer;
     align-items: center;
+    fill: currentColor;
 }
 .modal-button:hover,
 .modal-button:focus{
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
+.modal-button:focus+.close-modal{
+    fill: var(--accent-color);
+}
+.modal-label{
+    display: block;
+    width: 22px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+}
+
+.modal-control{
+    position: relative;
+}
+.modal-person{
+    width: 100%;
+    padding: 14px 14px 14px 36px;
+    border: 1px solid var(--modal-border);
+    border-radius: 4px;
+}
+.modal-person:focus {
+    border-color: var(--accent-color);
+}
+.modal-icon{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal-person:focus+.modal-icon{
+    fill: var(--accent-color);
+}
+
+/*Наші соболивості- */
 .description{
     padding-top: 94px;
     padding-bottom: 94px;
