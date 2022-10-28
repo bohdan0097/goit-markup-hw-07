@@ -65,7 +65,15 @@ img{
 header{
     border-bottom: 1px solid var(--border)
 }
-
+.visually-hidden{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
 .logo {
     margin-top:0px;
     margin-bottom:0 px;
@@ -405,6 +413,7 @@ header{
     fill: var(--accent-color);
 }
 .modal-title{
+    margin: 0 auto;
     width: 448px;
     height: 23px;
     font-weight: 700;
@@ -412,7 +421,7 @@ header{
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color:var(--primary-color);
 
 }
 .modal-label{
@@ -461,7 +470,42 @@ header{
 .modal-textarea:focus{
     border-color: var(--accent-color);
 }
-
+.cheackbox-input{
+    appearance: none;
+}
+.cheackbox-input:checked+.modal-iconsss{
+    color: red;
+    opacity: 0;
+}
+.cheackbox-label{
+    position: absolute;
+    margin-top: 10px;
+    padding-left: 23px;
+}
+.modal-iconsss{
+    position: absolute;
+    left: 0;
+    background-color:var(--accent-color);
+}
+.cheackbox-label::before{
+    content: '';
+    position:absolute;
+    width: 16px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    border-radius: 1px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.cheackbox-label::after{
+    content: '';
+    position:absolute;
+    width: 16px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    color: #188CE8;
+}
 .section-modal-button {
     top: auto;
     width: 200px;
@@ -842,6 +886,7 @@ header{
     padding: 20px 24px;
     text-decoration: none;
 }
+/*//footer/*/
 .site-footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -917,6 +962,15 @@ header{
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+.footer-text-subscription{
+    position: relative;
+    margin-left: 93px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
 }
 .footer-itm:hover{
@@ -929,4 +983,33 @@ header{
     background-color: var(--accent-color);
 }
 .footer-itm .footer-itm{
-    fill: var(--primary-bg-color)}
+    fill: var(--primary-bg-color)
+}
+.footer-control{
+   
+}
+.footer-subscription{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -200px
+
+}
+.subscription-button{
+
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
