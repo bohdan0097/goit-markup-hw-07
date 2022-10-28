@@ -424,6 +424,11 @@ header{
     color:var(--primary-color);
 
 }
+.test{
+    width: 448px;
+    height: 58px;
+    margin-bottom: 10px;
+}
 .modal-label{
     display: block;
     width: 22px;
@@ -964,7 +969,6 @@ header{
     text-transform: uppercase;
 }
 .footer-text-subscription{
-    position: relative;
     margin-left: 93px;
     font-weight: 700;
     font-size: 14px;
@@ -986,16 +990,31 @@ header{
     fill: var(--primary-bg-color)
 }
 .footer-control{
-   
+    position: relative;
+}
+.footer-label{
+    
 }
 .footer-subscription{
     position: absolute;
-    margin-top: 50px;
-    margin-left: -200px
-
+    width: 358px;
+    margin: 0;
+    height: 50px;
+    padding-left: 16px;
+    top: 15px;
+    left: -210px;
+    background-color: var(--bg);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
 }
 .subscription-button{
-
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    left: 164px;
+    margin: 0;
     width: 200px;
     height: 50px;
     border: none;
@@ -1012,4 +1031,10 @@ header{
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-icon-send{
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
 }
