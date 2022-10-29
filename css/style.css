@@ -413,20 +413,18 @@ header{
     fill: var(--accent-color);
 }
 .modal-title{
-    margin: 0 auto;
-    width: 448px;
-    height: 23px;
+    margin: 0;
+    margin-bottom: 12px;
+    color: var(--primary-color);
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
+    font-size: 20px;
+    line-height: 1.15;
     letter-spacing: 0.03em;
-    color:var(--primary-color);
+    text-align: center;
 
 }
-.test{
-    width: 448px;
-    height: 58px;
+
+.modal-input{
     margin-bottom: 10px;
 }
 .modal-label{
@@ -443,6 +441,7 @@ header{
     position: relative;
 }
 .modal-person{
+    height: 100%;
     width: 100%;
     padding: 14px 14px 14px 36px;
     border: 1px solid var(--modal-border);
@@ -471,6 +470,7 @@ header{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
+    resize: none;
 }
 .modal-textarea:focus{
     border-color: var(--accent-color);
@@ -478,20 +478,25 @@ header{
 .cheackbox-input{
     appearance: none;
 }
-.cheackbox-input:checked+.modal-iconsss{
-    color: red;
-    opacity: 0;
+.cheackbox-input:checked+ .icon-heck{
+    background-color:var(--accent-color)
+}
+.checkbox-input{
+    position: relative;
+    margin-bottom: 30px;
+
 }
 .cheackbox-label{
-    position: absolute;
+    cursor: pointer;
+    position: relative;
     margin-top: 10px;
     padding-left: 23px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
 }
-.modal-iconsss{
-    position: absolute;
-    left: 0;
-    background-color:var(--accent-color);
-}
+
 .cheackbox-label::before{
     content: '';
     position:absolute;
@@ -502,17 +507,17 @@ header{
     border-radius: 1px;
     border: 1px solid rgba(33, 33, 33, 0.2);
 }
-.cheackbox-label::after{
+.icon-heck{
     content: '';
     position:absolute;
     width: 16px;
     height: 15px;
-    top: 0;
-    left: 0;
-    color: #188CE8;
+    bottom: 5px;
+    background-color:
 }
 .section-modal-button {
-    top: auto;
+    display: block;
+    margin: 0 auto;
     width: 200px;
     height: 50px;
     border: none;
@@ -1003,6 +1008,7 @@ header{
     padding-left: 16px;
     top: 15px;
     left: -210px;
+    color: var(--title-color);
     background-color: var(--bg);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

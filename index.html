@@ -389,7 +389,7 @@
                     <div class="footer-control">
                   <label class="footer-label" for="person-subscription"></label>
                     <input class="footer-subscription" id="subscription" type="person-subscription" name="person-subscription" placeholder="E-mail">
-                    <button type="button"class="subscription-button" type="submit">Підписатися
+                    <button type="button"class="subscription-button">Підписатися
                       <svg class="footer-icon-send" wind="24" height="24">
                       <use href="./images/icons.svg#icon-icon-send"></use>
                     </svg></button>
@@ -397,7 +397,6 @@
             </address>
       </div>
     </footer>
-
     <div class="backdroop is-hidden"data-modal>
       <div class="modal">
         <button class="modal-button" type="button"data-modal-close>
@@ -407,7 +406,7 @@
         </button> 
         <h2 class="modal-title" >Залиште свої дані, ми вам передзвонимо</h2>
         <form name="contact-form">
-          <div class="test">
+          <div class="modal-input">
             <label class="modal-label" for="person-name">Ім'я</label>
             <div class="modal-control">
               <input class="modal-person" id="person-name" type="text" name="person-name">
@@ -416,7 +415,7 @@
               </svg>
             </div>
           </div>
-          <div class="test">
+          <div class="modal-input">
             <label class="modal-label" for="person-phone">Телефон</label>
             <div class="modal-control">
               <input class="modal-person" id="person-phone" type="tell" name="person-phone" >
@@ -425,7 +424,7 @@
               </svg>
             </div>
           </div>
-          <div class="test">
+          <div class="modal-input">
             <label class="modal-label" for="person-mail">Пошта</label>
             <div class="modal-control">
               <input class="modal-person" id="mail" type="person-email" name="person-mail">
@@ -434,19 +433,20 @@
               </svg>
             </div>
           </div>
-        <label class="modal-label" for="person-mail">Коментар</label>
-            <textarea  class="modal-textarea" name="person-coment" id="person-coment" cols="30" rows="10" 
-            placeholder="Введіть текст"> </textarea>
-
+          <div class="checkbox-input">
+            <label class="modal-label" for="person-mail">Коментар</label>
+            <textarea  class="modal-textarea" name="person-coment" id="person-coment" cols="30" rows="10"placeholder="Введіть текст"></textarea>
           <input class="cheackbox-input visually-hidden" 
           id="tearms-cheackbox" 
           type="checkbox" 
           name="tearms-cheackbox">
-        <label class="cheackbox-label" for="tearms-cheackbox">Погоджуюся з розсилкою та приймаю 
-          <a href="#">Умови договору</a>
-        <svg class="modal-iconsss" width="15" height="15">
-          <use href=".//images/icon-modal.svg#icon-Vector"></use>
-        </svg></label>
+          <svg class="icon-heck" width="16" height="15">
+            <use href=".//images/icon-modal.svg#icon-Vector"></use>
+          </svg>
+        <label class="cheackbox-label" for="tearms-cheackbox"> Погоджуюся з розсилкою та приймаю 
+          <a href="#">Умови договору</a></label>
+          </div>
+        <button  type="submit"class="section-modal-button">Підписатися</button>
         </form>
       </div>
     </div>
