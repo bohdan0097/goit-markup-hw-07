@@ -383,6 +383,7 @@ header{
     background-color:var(--primary-bg-color);
     cursor: pointer;
     position: absolute;
+    display: flex;
     top: 8px;
     right: 8px;
     width: 30px;
@@ -396,17 +397,10 @@ header{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-modal{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    padding: 0px;
-    cursor: pointer;
-    align-items: center;
     fill: currentColor;
 }
 .modal-button:hover,
 .modal-button:focus{
-    border-color: var(--accent-color);
     color: var(--accent-color);
 }
 .modal-button:focus+.close-modal{
@@ -443,7 +437,7 @@ header{
 .modal-person{
     height: 100%;
     width: 100%;
-    padding: 14px 14px 14px 36px;
+    padding: 11px 11px 11px 38px;
     border: 1px solid var(--modal-border);
     border-radius: 4px;
     outline: none;
@@ -478,15 +472,17 @@ header{
 .cheackbox-input{
     appearance: none;
 }
+
 .cheackbox-input:checked+ .icon-heck{
-    background-color:var(--accent-color)
+    z-index: 1;
+    background-color: var(--accent-color)
 }
 .checkbox-input{
     position: relative;
     margin-bottom: 30px;
-
 }
 .cheackbox-label{
+    display: flex;
     cursor: pointer;
     position: relative;
     margin-top: 10px;
@@ -496,16 +492,25 @@ header{
     line-height: 24px;
     letter-spacing: 0.03em;
 }
-
 .cheackbox-label::before{
     content: '';
     position:absolute;
+    left: 0;
+    bottom: 5px;
     width: 16px;
     height: 15px;
-    top: 0;
-    left: 0;
-    border-radius: 1px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 3px;
+    border: 2px solid var(--primary-color)
+}
+.checkbox-link{
+    padding-left: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+
+    color:var(--accent-color)
 }
 .icon-heck{
     content: '';
@@ -513,7 +518,7 @@ header{
     width: 16px;
     height: 15px;
     bottom: 5px;
-    background-color:
+    border-radius: 3px;
 }
 .section-modal-button {
     display: block;
@@ -973,8 +978,11 @@ header{
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.footer-text-subscription{
+.test{
     margin-left: 93px;
+}
+.footer-text-subscription{
+    margin-top: 0px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
@@ -996,18 +1004,17 @@ header{
 }
 .footer-control{
     position: relative;
+    display: flex;
+    gap: 12px;
 }
 .footer-label{
     
 }
 .footer-subscription{
-    position: absolute;
     width: 358px;
     margin: 0;
     height: 50px;
     padding-left: 16px;
-    top: 15px;
-    left: -210px;
     color: var(--title-color);
     background-color: var(--bg);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1015,12 +1022,10 @@ header{
     border-radius: 4px;
 }
 .subscription-button{
-    position: absolute;
+    display: flex;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    top: 15px;
-    left: 164px;
-    margin: 0;
     width: 200px;
     height: 50px;
     border: none;
@@ -1037,10 +1042,4 @@ header{
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-icon-send{
-    position: absolute;
-    left: 25px;
-    top: 50%;
-    transform: translateY(-50%);
 }
