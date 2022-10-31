@@ -472,10 +472,11 @@ header{
 .cheackbox-input{
     appearance: none;
 }
-
 .cheackbox-input:checked+ .icon-heck{
-    z-index: 1;
     background-color: var(--accent-color)
+}
+.cheackbox-input:checked ~.cheackbox-label::before{
+    opacity: 0;
 }
 .checkbox-input{
     position: relative;
