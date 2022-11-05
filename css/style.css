@@ -51,7 +51,7 @@ ul{
     padding: 0px;
     margin: 0px;
 }
-.nav-link {
+.header_link {
     color: var(--primary-color);
 }
 image{
@@ -74,7 +74,7 @@ header{
     white-space: nowrap;
     width: 1px;
 }
-.logo {
+.header_logo {
     margin-top:0px;
     margin-bottom:0 px;
     margin-right: 93px;
@@ -106,13 +106,13 @@ header{
 .site-nav .logo {
     color: var(--primary-color);
 }
-.logo span {
+.header_logo span {
     color: var(--accent-color);
 }
-.nav-link.current {
+.header_link.current {
     color: var(--accent-color);
 }
-.nav-link{
+.header_link{
     display: flex;
     position: relative;
     color:var(--primary-color);
@@ -127,7 +127,7 @@ header{
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link::after{
+.header_link::after{
     position: absolute;
     content: "";
     width: 100%;
@@ -137,49 +137,56 @@ header{
     background-color:var(--accent-color);
     border-radius: 2px;
 }
-.nav-link.current:after{
+.header_link.current:after{
     opacity: 1;
 }
-.page-header{
+.container__header {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container__header{
     display: flex;
     height: 80px;
     align-self:center
 }
-.page-header .site-adress {
+.header__address{
     display: flex;
     margin-left: auto;
     margin-top: 0px;
     margin-bottom: 0px;
     align-content: center;
 }
-.header-icon{
+.header_icon{
     display: flex;
     fill: var(--primery-sec);
     align-items: center;
     margin-right: 10px;
 }
-.site-adress li:not(:first-child) {
+.header__address li:not(:first-child) {
     margin-left: 50px
 }
-.header-nav li:not( :last-child) {
+.header__nav li:not( :last-child) {
     margin-right:50px
 }
-.header-nav {
+.header__nav{
     display: flex;
     padding: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
 }
-.header-nav.nav-link:not(:last-child){
+.header_link:not(:last-child){
     margin-right: 50px;
 }
-.img-work{
+.img_work{
     display: flex;
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.img-work li{
+.img_work li{
     margin-right: 30px;
     padding: 0px;
 }
@@ -219,19 +226,16 @@ header{
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
-
-.nav-link:hover {
+.header_link:hover {
     color: var(--accent-color);
     transition: background-color 250ms color 250ms, box-shadow 250ms ;
 }
-
-.nav-link:focus {
+.header_link:focus {
     color: var(--accent-color);
     transition: background-color 250ms color 250ms, box-shadow 250ms ;
 }
-.site-link{
+.header__address__link{
     display: flex;
     padding: 32px 0px;
     color: var(--primery-sec);
@@ -248,15 +252,15 @@ header{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-.site-link:hover,
-.site-link:focus{
+.header__address__link:hover,
+.header__address__link:focus{
     color: var(--accent-color);
 }
-.site-link:hover .header-icon{
+.header__address__link:hover .header_icon{
     color: var(--accent-color);
     fill: var(--accent-color);
 }
-.site-link:focus .header-icon{
+.header__address__link:focus .header_icon{
     color: var(--accent-color);
     fill: var(--accent-color);
 }
@@ -288,14 +292,13 @@ header{
 .section-title {
     color: var(--primary-color)
 }
-
-.section-hero {
+.section__hero{
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--bg);
     text-align: center;
 }
-.hero-title {
+.hero_title {
     margin-top: 0px;
     margin-bottom: 30px;
     margin-left: auto;
@@ -313,7 +316,7 @@ header{
     background: none;
 }
 
-.section-hero{
+.section__hero{
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -322,7 +325,7 @@ header{
     url('../images/Img-hed.jpg');
 }
 
-.section-hero-button {
+.hero_button{
     height: 50px;
     width: 216px;
     border: none;
@@ -338,15 +341,15 @@ header{
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.section-hero-button {
+.section__hero-button {
     cursor: pointer;
 }
 
-.section-hero-button:hover {
+.hero_button:hover {
     background-color: var(--object-color)
 }
 
-.section-hero-button:focus {
+.hero_button:focus {
     background-color: var(--accent-color)
 }
 /*///*modal*/
@@ -546,12 +549,12 @@ header{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.description  .skils{
+.description_skils{
     display: flex;
     padding: 0px;
     gap: 30px;
 }
-.hide-text{
+.description_text{
     margin-top: 0px;
     margin-bottom: 0px;
     height: 1px;
@@ -560,7 +563,7 @@ header{
     white-space: nowrap;
     width: 1px;
 }
-.skils-itm{
+.skils_itm{
     display: flex;
     width: 270px;
     height: 120px;
@@ -570,7 +573,7 @@ header{
     margin-bottom: 30px;
 }
 
-.skill-icon {
+.skill_icon {
     height: 70px;
     width: 70px;
     border-radius:4px;
@@ -578,7 +581,7 @@ header{
     align-items: center;
     justify-content: center;
 }
-.description.skils-itm:not(:last-child){
+.skils_itm:not(:last-child){
     margin-right: 30px;
 }
 .title {
@@ -591,14 +594,14 @@ header{
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.feature-text {
+.feature_text {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
-.feature-work {
+.feature_work {
     position: relative;
     margin-top: 0px;
     margin-bottom: 50px;
@@ -610,7 +613,7 @@ header{
     letter-spacing: 0.03em;
     text-align: center;
 }
-.presentation-text{
+.presentation__text{
     display: flex;
     align-items: center;
     position: absolute;
@@ -633,7 +636,7 @@ header{
 .about-presentation{
     margin: 0;
 }
-.feature-work li:nth-child(3n){
+.feature_work li:nth-child(3n){
     margin-right: 0px;
 }
 .title-team{
@@ -850,7 +853,7 @@ header{
 .feature-tegline:focus .tegline-text{
     transform: translateY(0);
 }
-.presentation-work{
+.presentation__work{
     display: flex;
     flex-wrap: wrap;
     margin-top: 0px;
@@ -858,7 +861,7 @@ header{
     padding: 0px;
     padding-bottom: 94px;
 }
-.presentation-work li:nth-child(3n){
+.presentation__work li:nth-child(3n){
     margin-right: 0px;
 }
 .secondary-buttom {
@@ -1007,9 +1010,6 @@ header{
     position: relative;
     display: flex;
     gap: 12px;
-}
-.footer-label{
-    
 }
 .footer-subscription{
     width: 358px;
