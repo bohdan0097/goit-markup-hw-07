@@ -661,7 +661,7 @@ header{
     letter-spacing: 0.03em;
     text-align: center;
 }
-.time-llist{
+.team-list{
     display: flex;
 }
 .clients{

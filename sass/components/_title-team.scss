@@ -1,0 +1,86 @@
+.title-team { 
+    color: var(--primary-color);
+    background-color: var(--secondary-bg);
+}
+.title-team .team-description{
+    padding: 30px;
+    text-align: center;
+}
+.title-name {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+.title-work {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: var(--primery-sec);
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+.title-feature {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+.team-list{
+    display: flex;
+}
+.acquaintance{
+    margin-right: 30px;
+    padding: 0px;
+    margin-bottom: 0px;
+    width: 270px;
+    background-color: var(--primary-bg-color);
+}
+.acquaintance:last-child{
+    margin: 0px;
+    padding: 0px;
+}
+.soc-list {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.soc-itm{
+    height: 44px;
+    width: 44px;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition-property: background-color,;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.soc-itm:hover{
+    background-color: var(--accent-color);
+}
+.soc-itm:hover .social-img{
+    fill: var(--primary-bg-color);
+}
+.soc-itm:focus{
+    background-color: var(--accent-color);
+}
+.soc-itm:focus .social-img{
+    fill: var(--primary-bg-color);
+}
+.social-img{
+    fill: var(--soccial-icon);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
