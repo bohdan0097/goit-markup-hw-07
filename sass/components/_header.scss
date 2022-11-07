@@ -103,8 +103,10 @@ header{
 .header-address li:not(:first-child) {
     margin-left: 50px
 }
-.container-header-header-nav li:not( :last-child) {
-    margin-right:50px
+.container-header-header-nav{
+    &:not( :last-child){
+        margin-right:50px
+    }
 }
 .container-header-header-nav{
     display: flex;
@@ -156,14 +158,20 @@ header{
 .soc-itm:hover{
     background-color: var(--accent-color);
 }
-.soc-itm:hover .social-img{
-    fill: var(--primary-bg-color);
+.soc-itm{
+    &:hover{
+        .social-img{
+            fill: var(--primary-bg-color);}
+        }
 }
 .soc-itm:focus{
     background-color: var(--accent-color);
 }
-.soc-itm:focus .social-img{
-    fill: var(--primary-bg-color);
+.soc-itm{
+    &:focus{
+        .social-img{
+            fill: var(--primary-bg-color);}
+        }
 }
 .social-img{
     fill: var(--soccial-icon);
@@ -200,11 +208,11 @@ header{
 .address-link:focus{
     color: var(--accent-color);
 }
-.address-link:hover .header-icon{
-    color: var(--accent-color);
-    fill: var(--accent-color);
-}
-.address-link:focus .header-icon{
-    color: var(--accent-color);
-    fill: var(--accent-color);
+.address-link{
+    &:focus,
+    &:hover{
+        .header-icon{
+            color: var(--accent-color);
+            fill: var(--accent-color);}
+    }
 }

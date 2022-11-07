@@ -121,14 +121,13 @@
 .footer-itm:hover{
     background-color: var(--accent-color);
 }
-.footer-itm .footer-itm{
-    fill: var(--primary-bg-color);
+.footer-itm{
+    &.footer-itm{
+        fill: var(--primary-bg-color);
+    }
 }
 .footer-itm:focus{
     background-color: var(--accent-color);
-}
-.footer-itm .footer-itm{
-    fill: var(--primary-bg-color)
 }
 .footer-control{
     position: relative;

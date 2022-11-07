@@ -47,12 +47,18 @@
 .clients-link:hover{
     border-color: var(--accent-color);
 }
-.clients-link:hover .clients-img{
-    fill:var(--accent-color);
+.clients-link{
+    &:hover{
+        .clients-img{
+            fill:var(--accent-color);}
+    }
 }
 .clients-link:focus{
     border: var(--accent-color);
 }
-.clients-link:focus .clients-img{
-    fill:var(--accent-color);
+.clients-link{
+    &:focus{
+        .clients-img{
+            fill:var(--accent-color);}
+    }
 }

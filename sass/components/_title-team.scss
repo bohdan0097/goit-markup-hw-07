@@ -66,17 +66,16 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc-itm:hover{
-    background-color: var(--accent-color);
-}
-.soc-itm:hover .social-img{
-    fill: var(--primary-bg-color);
-}
-.soc-itm:focus{
-    background-color: var(--accent-color);
-}
-.soc-itm:focus .social-img{
-    fill: var(--primary-bg-color);
+.soc-itm{
+    &:hover,
+    &:focus{
+        background-color: var(--accent-color);
+    }
+    &:focus,
+    &:hover{
+        .social-img{
+            fill: var(--primary-bg-color);}
+    }
 }
 .social-img{
     fill: var(--soccial-icon);

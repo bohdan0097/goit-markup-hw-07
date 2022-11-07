@@ -36,11 +36,17 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.feature-tegline:hover .tegline-text{
-    transform: translateY(0);
+.feature-tegline{
+    &:hover{
+        .tegline-text{
+            transform: translateY(0);}
+    }
 }
-.feature-tegline:focus .tegline-text{
-    transform: translateY(0);
+.feature-tegline{
+    &:focus{
+        .tegline-text{
+            transform: translateY(0);}
+    }
 }
 .presentation-work{
     display: flex;
