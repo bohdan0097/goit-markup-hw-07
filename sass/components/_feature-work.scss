@@ -1,15 +1,15 @@
-.presentation-work{
+.presentation{
     display: flex;
     flex-wrap: wrap;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0px;
     padding-bottom: 94px;
-}
-.presentation-work li:nth-child(3n){
+
+&_group:nth-child(3n){
     margin-right: 0px;
 }
-.feature-work {
+&__work{
     position: relative;
     margin-top: 0px;
     margin-bottom: 50px;
@@ -21,7 +21,7 @@
     letter-spacing: 0.03em;
     text-align: center;
 }
-.presentation-text{
+&__text{
     display: flex;
     align-items: center;
     position: absolute;
@@ -41,19 +41,20 @@
     background-color: rgba(47, 48, 58, 0.8);
     transform: translateY(-100%);
 }
-.about-presentation{
+&__description{
     margin: 0;
 }
-.feature-work li:nth-child(3n){
+&__work li:nth-child(3n){
     margin-right: 0px;
 }
-.img-work{
+&__img{
     display: flex;
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.img-work li{
+&__img li{
     margin-right: 30px;
     padding: 0px;
+}
 }

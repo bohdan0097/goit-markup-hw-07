@@ -1,56 +1,58 @@
 .description{
     padding-top: 94px;
     padding-bottom: 94px;
-}
-.description-skils{
-    display: flex;
-    padding: 0px;
-    gap: 30px;
-}
-.description-text{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
-.skils-itm{
-    display: flex;
-    width: 270px;
-    height: 120px;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--secondary-bg);
-    margin-bottom: 30px;
-}
+    
+    &__skils{
+        display: flex;
+        padding: 0px;
+        gap: 30px;
+    }
+    &__text{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+    &__skils__itm{
+        display: flex;
+        width: 270px;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--secondary-bg);
+        margin-bottom: 30px;
+    }
+    
+    &__skils__icon {
+        height: 70px;
+        width: 70px;
+        border-radius:4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__skils__itm:not(:last-child){
+        margin-right: 30px;
+    }
+    &__title{
+        margin-top: 0px;
+        margin-bottom: 10px;
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    &__feature-text{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+    }
 
-.skill-icon {
-    height: 70px;
-    width: 70px;
-    border-radius:4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.skils-itm:not(:last-child){
-    margin-right: 30px;
-}
-.title {
-    margin-top: 0px;
-    margin-bottom: 10px;
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-.feature-text {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
 }

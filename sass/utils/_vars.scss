@@ -55,3 +55,12 @@ img{
     display: block;
     max-width: 100%;
 }
+.visually-hidden{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

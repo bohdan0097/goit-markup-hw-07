@@ -1,10 +1,16 @@
-.section-hero{
+.hero{
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--bg);
     text-align: center;
-}
-.hero-title {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/Img-hed.jpg');
+
+&__title {
     margin-top: 0px;
     margin-bottom: 30px;
     margin-left: auto;
@@ -21,17 +27,7 @@
     justify-content:center;
     background: none;
 }
-
-.section-hero{
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/Img-hed.jpg');
-}
-
-.hero-button{
+&__button{
     height: 50px;
     width: 216px;
     border: none;
@@ -42,19 +38,16 @@
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
+    cursor: pointer;
     border-radius: 4px;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-button{
-    cursor: pointer;
-}
-
-.hero-button:hover {
+&__button:hover {
     background-color: var(--object-color)
 }
-
-.hero-button:focus {
+&__button:focus {
     background-color: var(--accent-color)
+}
 }
