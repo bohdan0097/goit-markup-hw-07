@@ -5,6 +5,7 @@ html {
 *::before *::after {
     box-sizing: inherit;
 }
+/*
 :root {
     --primary-color: #212121;
     --title-color: #fff;
@@ -19,6 +20,21 @@ html {
     --footer: rgba(255, 255, 255, 0.6);
     --modal-border:rgba(33, 33, 33, 0.2);
 }
+*/
+$color-test:red;
+
+$primary-color: #212121;
+$title-color: #fff;
+$accent-color: #2196F3;
+$primary-bg-color: #fff;
+$secondary-bg: #F5F4FA;
+$primery-sec: #757575;
+$soccial-icon: #AFB1B8;
+$bg: #2F303A;
+$object-color: #188CE8;
+$border:#EEEEEE;
+$footer: rgba(255, 255, 255, 0.6);
+$modal-border:rgba(33, 33, 33, 0.2);
 body {
     background-color: var(--primary-bg-color);
     color: var(--primery-sec);
