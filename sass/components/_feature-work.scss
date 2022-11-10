@@ -14,7 +14,7 @@
     margin-top: 0px;
     margin-bottom: 50px;
     padding: 0px;
-    color: var(--primary-color);
+    color:$primary-color;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -23,6 +23,7 @@
 }
 &__text{
     display: flex;
+    justify-content: center;
     align-items: center;
     position: absolute;
     width: 370px;
@@ -34,10 +35,9 @@
     font-size: 14px;
     line-height: 1.2;
     text-align: center;
-    justify-content: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-bg-color);
+    color: $primary-bg-color;
     background-color: rgba(47, 48, 58, 0.8);
     transform: translateY(-100%);
 }

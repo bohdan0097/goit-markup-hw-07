@@ -1,0 +1,87 @@
+.team { 
+    color: $primary-color;
+    background-color: $secondary-bg;
+    
+    &__description{
+        padding: 30px;
+        text-align: center;
+    }
+    &__name {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: var(--primary-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+    }
+    &__position {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        color: $primery-sec;
+        font-size: 16px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+    }
+    &__title {
+        margin-top: 0px;
+        margin-bottom: 50px;
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+    &__list{
+        display: flex;
+    }
+    &acquaintance{
+        margin-right: 30px;
+        padding: 0px;
+        margin-bottom: 0px;
+        width: 270px;
+        background-color: $primary-bg-color;
+    }
+    &acquaintance:last-child{
+        margin: 0px;
+        padding: 0px;
+    }
+}
+.social{
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 0px;
+    margin-bottom: 0px;
+    
+    &__itm{
+        height: 44px;
+        width: 44px;
+        background-color:$primary-bg-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition-property: background-color,;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__itm{
+        &:hover,
+        &:focus{
+            background-color: $accent-color;
+        }
+        &:focus,
+        &:hover{
+            .social__img{
+                fill: $primary-bg-color;}
+        }
+    }
+    &__img{
+        fill: $soccial-icon;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    }

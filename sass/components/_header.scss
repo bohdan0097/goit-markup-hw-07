@@ -1,13 +1,14 @@
+
 .header{
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid $border;
 
     &__logo{
         margin-top:0px;
         margin-bottom:0 px;
         margin-right: 93px;
         display: flex;
-        color: var(--primary-color);
-        font-family: 'Raleway', sans-serif;
+        color: $primary-color;
+        font-family:'Raleway', sans-serif;
         font-size: 26px;
         line-height: 1.2;
         letter-spacing: 0.03em;
@@ -18,7 +19,7 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     &__logo span {
-        color: var(--accent-color);
+        color:$accent-color;
     }
     &__link.current {
         color: red($color: #000000)
@@ -35,7 +36,7 @@
     &__link{
         display: flex;
         position: relative;
-        color:var(--primary-color);
+        color:$primary-color;
         font-size: 14px;
         font-weight: 500;
         line-height: 1.2;
@@ -54,7 +55,7 @@
         height: 4px;
         bottom: 0px;
         opacity: 0;
-        background-color:var(--accent-color);
+        background-color:$accent-color;
         border-radius: 2px;
     }
     &__link.current:after{
@@ -79,8 +80,9 @@
     }
     &__address__icon{
         display: flex;
-        fill: var(--primery-sec);
+        justify-content: center;
         align-items: center;
+        fill: $primery-sec;
         margin-right: 10px;
     }
     &__address li:not(:first-child) {
@@ -110,25 +112,24 @@
         margin-right: 50px;
     }
     &__link:hover {
-        color: var(--accent-color);
+        color: $accent-color;
         transition: background-color 250ms color 250ms, box-shadow 250ms ;
     }
     &__link:focus {
-        color: var(--accent-color);
+        color: $accent-color;
         transition: background-color 250ms color 250ms, box-shadow 250ms ;
     }
     &__address__link{
         display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 32px 0px;
-        color: var(--primery-sec);
+        color: $primery-sec;
         font-size: 14px;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
         text-decoration: none;
-        align-items: center;
-        justify-content: center;
-    
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -136,15 +137,14 @@
     }
     &__address__link:hover,
     &__address__link:focus{
-        color: var(--accent-color);
+        color: $accent-color;
     }
     &__address__link{
         &:focus,
         &:hover{
             .header__address__icon{
-                color: var(--accent-color);
-                fill: var(--accent-color);}
+                color: $accent-color;
+                fill: $accent-color;}
         }
-
 }
 }

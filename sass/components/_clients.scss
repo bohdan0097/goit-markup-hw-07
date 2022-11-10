@@ -1,64 +1,64 @@
 .clients{
     padding-top: 94px;
     padding-bottom: 98px;
-}
-.title-feature {
-    margin-top: 0px;
-    margin-bottom: 50px;
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-.clients-list{
-    width: calc((100 - 170 ) / 6);
-    display: flex;
-    gap: 30px;
-}
-.clients-link {
-    border: 1px solid var(--soccial-icon);
-    width: 170px;
-    height: 92px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-}
-.clients-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients-img {
-    height: 60px;
-    width: 106px;
-    fill: var(--soccial-icon);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-property: fill,border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients-link:hover{
-    border-color: var(--accent-color);
-}
-.clients-link{
-    &:hover{
-        .clients-img{
-            fill:var(--accent-color);}
+    
+    &__feature {
+        margin-top: 0px;
+        margin-bottom: 50px;
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-align: center;
     }
-}
-.clients-link:focus{
-    border: var(--accent-color);
-}
-.clients-link{
-    &:focus{
-        .clients-img{
-            fill:var(--accent-color);}
+    &__list{
+        width: calc((100 - 170 ) / 6);
+        display: flex;
+        gap: 30px;
     }
+    &__link {
+        border: 1px solid $soccial-icon;
+        width: 170px;
+        height: 92px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__img {
+        height: 60px;
+        width: 106px;
+        fill:$soccial-icon;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-property: fill,border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:hover{
+        border-color:$accent-color;;
+    }
+    &__link{
+        &:hover{
+            .clients__img{
+                fill:$accent-color;}
+        }
+    }
+    &__link:focus{
+        border: $accent-color;
+    }
+    &__link{
+        &:focus{
+            .clients__img{
+                fill:$accent-color;}
+        }}
 }
