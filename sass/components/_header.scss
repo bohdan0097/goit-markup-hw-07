@@ -72,11 +72,23 @@ header{border-bottom: 1px solid $border;}
         align-self:center
     }
     &__address{
-        display: flex;
+        display: flex; 
         margin-left: auto;
         margin-top: 0px;
         margin-bottom: 0px;
         align-content: center;
+
+    }
+    &__burger-menu{
+        @media (min-width:481px) {
+            display: none;
+        }
+
+        }
+        @media (max-width:480px) {
+            display: flex;
+            justify-content: space-between;
+            
     }
     &__address-icon{
         display: flex;
@@ -107,6 +119,10 @@ header{border-bottom: 1px solid $border;}
         padding: 0px;
         margin-bottom: 0px;
         margin-top: 0px;
+        @media (max-width:480px) {
+            display: none;
+            
+        }
     }
     &__link:not(:last-child){
         margin-right: 50px;
@@ -133,6 +149,11 @@ header{border-bottom: 1px solid $border;}
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media (max-width:480px) {
+            display: none;
+            
+        }
         
     }
     &__address-link:hover,
@@ -145,6 +166,5 @@ header{border-bottom: 1px solid $border;}
             .header__address-icon{
                 color: $accent-color;
                 fill: $accent-color;}
-        }
-}
-}
+        }}
+    }

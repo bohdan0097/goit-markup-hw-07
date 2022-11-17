@@ -1,7 +1,7 @@
 .description{
     padding-top: 94px;
     padding-bottom: 94px;
-    
+
     &__skils{
         display: flex;
         padding: 0px;
@@ -46,7 +46,7 @@
         line-height: 1.2;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-    }
+        }
     &__feature-text{
         margin-top: 0px;
         margin-bottom: 0px;
@@ -54,5 +54,4 @@
         line-height: 1.7;
         letter-spacing: 0.03em;
     }
-
 }

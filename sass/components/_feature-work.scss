@@ -5,7 +5,9 @@
     margin-bottom: 0px;
     padding: 0px;
     padding-bottom: 94px;
-
+    @media (max-width: 480px) {
+        display:none;
+    }
 &__group:nth-child(3n){
     margin-right: 0px;
 }
