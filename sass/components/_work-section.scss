@@ -10,7 +10,6 @@
 
   &__title {
     text-align: center;
-
     color: $primary-color;
     font-weight: 700;
     font-size: 36px;
@@ -43,6 +42,9 @@
   }
 
   &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
 
     @media screen and(min-width:1200px) {
