@@ -3,10 +3,21 @@
     padding-bottom: 94px;
     color: $primary-color;
     background-color: $secondary-bg;
+
+    @media screen and (max-width:481px) {
+        display: flex;
+        height: auto;
+        flex-wrap: wrap;}
+       
+        @media screen and (max-width:768px) {
+            flex-basis: calc((100% - 30px) / 2);
+            display: flex;
+            flex-wrap: wrap;}
     
     &__description{
         padding: 30px;
         text-align: center;
+        
     }
     &__name {
         margin-top: 0px;
@@ -36,26 +47,43 @@
         text-align: center;
     }
     &__list{
+        width:100%;
+        height: 100%;
+        justify-content:center;
         display: flex;
-    }
+        flex-direction: column;
+        gap: 30px;}
+        
     &__acquaintance{
-        margin-right: 30px;
-        padding: 0px;
-        margin-bottom: 0px;
-        width: 270px;
+   
         background-color: $primary-bg-color;
-    }
+        @media screen and (max-width:481px) {
+            display: flex;
+            height: auto;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;}}
+
+        @media screen and (max-width:768px) {
+            flex-basis: calc((100% - 30px) / 2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;}
+        
     &__acquaintance:last-child{
         margin: 0px;
-        padding: 0px;
-    }
+        padding: 0px;}
+    
     
     &__social{
         display: flex;
         gap: 10px;
         margin-top: 16px;
         padding: 0px;
-        margin-bottom: 0px;}
+        margin-bottom: 0px;
+}
 
     &__social-itm{
         height: 44px;
@@ -68,7 +96,6 @@
         transition-property: background-color,;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
     &__social-itm{
         &:hover,
         &:focus{
@@ -86,4 +113,4 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    }
+    }}

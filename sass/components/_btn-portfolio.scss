@@ -3,7 +3,13 @@
     padding-bottom: 94px;
 }
 .hide-text{
-    @extend %visually-hidden
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 .btn{
     margin: 0px;

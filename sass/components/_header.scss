@@ -62,14 +62,26 @@ header{border-bottom: 1px solid $border;}
         opacity: 1;
     }
     &__container{
-        width: 1200px;
+        width: 480px;
         padding-left: 15px;
         padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
         height: 80px;
-        align-self:center
+        align-self:center;
+
+        @media (min-width:1200px) {
+            width: 1200px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            height: 80px;
+            align-self:center;
+            
+        }
     }
     &__address{
         display: flex; 
@@ -80,10 +92,15 @@ header{border-bottom: 1px solid $border;}
 
     }
     &__burger-menu{
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        padding: 0;
+        cursor: pointer;
+
         @media (min-width:481px) {
             display: none;
         }
-
         }
         @media (max-width:480px) {
             display: flex;

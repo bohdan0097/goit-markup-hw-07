@@ -1,57 +1,83 @@
-.description{
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-    &__skils{
-        display: flex;
-        padding: 0px;
-        gap: 30px;
+.features-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    @media screen and(min-width:1200px) {
+      padding-top: 94px;
+      padding-bottom: 0;
     }
-    &__text{
-        margin-top: 0px;
-        margin-bottom: 0px;
-        height: 1px;
-        overflow: hidden;
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
+  
+    &__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+  
+      @media screen and(min-width:768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+  
+      @media screen and(min-width:1200px) {
+        flex-wrap: nowrap;
+      }
     }
-    &__skils-itm{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  
+    &__item {
+      @media screen and(min-width:768px) {
+        width: 354px;
+      }
+    }
+  
+    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $secondary-bg;
+      width: 100%;
+      height: 120px;
+      margin-bottom: 30px;
+      border: transparent;
+      border-radius: 4px;
+  
+      @media screen and(min-width:768px) {
+        width: 354px;
+      }
+  
+      @media screen and(min-width:1200px) {
         width: 270px;
-        height: 120px;
-        background-color: $secondary-bg;
-        margin-bottom: 30px;
+      }
     }
-    
-    &__skils-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 70px;
-        width: 70px;
-        border-radius:4px;
+  
+    &__title {
+      color: $primary-color;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.1;
+      letter-spacing: 0.03em;
+      margin-bottom: 10px;
+  
+      @media screen and(min-width:768px) {
+        text-align: start;
+      }
     }
-    &__skils__itm:not(:last-child){
-        margin-right: 30px;
+
+    &__text {
+      color: $primary-color;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
     }
-    &__title{
-        margin-top: 0px;
-        margin-bottom: 10px;
-        color: $primary-color;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        }
-    &__feature-text{
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-    }
+  }
+  .visually-hidden{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }

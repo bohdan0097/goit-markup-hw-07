@@ -205,72 +205,90 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer__zone">
-          <div class="footer-box">
-            <a href="./index.html" class="footer__logo"><span>Web</span>Studio</a>
-            <address class="footer__address">
-              <ul class="footer__nav">
-                <li>
+      <div class="container footer-container--position">
+        <div class="footer__container--tablet-position">
+          <div class="container-adress">
+            <a href="index.html" class="footer__logo" lang="en"
+              >Web<span class="footer__logo--white">Studio</span></a
+            >
+            <address>
+              <ul class="footer__contacts-list">
+                <li class="footer__contacts-item">
                   <a
-                    href="https://goo.gl/maps/nhYpeaXYPzJ5wpQG9"
-                    class="footer__geolocation"
-                    target="blank"
+                    class="footer__contacts-adress"
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
                     rel="noopener noreferrer nofollow"
-                    >м. Київ, пр-т Лесі Украінки, 26</a
+                    >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li>
-                  <a href="mailto:info@devstudio.com" class="footer__contact"
+                <li class="footer__contacts-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="footer__contacts-link"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li>
-                  <a href="tel:+380961111111" class="footer__contact"
+                <li class="footer__contacts-item">
+                  <a href="tel:+380961111111" class="footer__contacts-link"
                     >+38 096 111 11 11</a
                   >
                 </li>
-              </ul></div>
-              <div class="footer__social">
-                <li>
-                  <p class="footer__text">приєднуйтесь</p>
-                  <ul class="footer__soc">
-                    <li>
-                      <a class="footer__itm" href="#">
-                        <svg  width="20" height="20">
-                          <use href="./images/icons.svg#icon-instagram" ></use>
-                        </svg>
-                      </a></li>
-                      <li>
-                        <a class="footer__itm" href="#">
-                          <svg  width="20" height="20">
-                            <use href="./images/icons.svg#icon-twitter" ></use>
-                          </svg>
-                        </a></li>
-                      <li>
-                        <a class="footer__itm" href="#">
-                          <svg  width="20" height="20">
-                            <use href="./images/icons.svg#icon-facebook" ></use>
-                          </svg>
-                        </a></li>
-                    <li>
-                      <a class="footer__itm" href="#">
-                        <svg  width="20" height="20">
-                          <use href="./images/icons.svg#icon-linkedin" ></use>
-                        </svg>
-                      </a></li></li>
-                    </div>
-                    <div class="footer__sub">
-                      <p class="footer__text-subscription">Підпишіться на розсилку</p>
-                      <form class="footer__control">
-                          <input class="footer__subscription" id="subscription" type="person-subscription" name="person-subscription" placeholder="E-mail">
-                          <button type="submit"class="footer__subscription-button">Підписатися
-                            <svg class="footer-icon-send" width="24" height="24">
-                            <use href="./images/icons.svg#icon-icon-send"></use>
-                          </svg></button>
-                        </form>
-                    </div>
+              </ul>
             </address>
-      </div>
-    </footer>
+          </div>
+          <div class="social-media__container">
+            <p class="social-media__subtittle">Приєднуйтесь</p>
+            <ul class="social-media">
+              <li class="social-media__item">
+                <a href="" class="social-media__link">
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="" class="social-media__link">
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="" class="social-media__link">
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="" class="social-media__link">
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="subscribe-form">
+          <label class="subscribe-form__label" for="join"
+            >Підпишіться на розсилку</label
+          >
+          <div class="subscribe-form__container">
+            <input
+              class="subscribe-form__input"
+              id="join"
+              type="text"
+              name="join-us"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-form__button" type="submit">
+              Підписатися
+              <svg class="subscribe-form__icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+      </footer>
   </body>
 </html>

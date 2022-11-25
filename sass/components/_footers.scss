@@ -1,162 +1,360 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: flex;
-    color:$title-color;
-    background-color:$bg;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    
+    padding: 60px 0;
+    background-color: $bg;
+  
     &__logo {
-        color: $primary-bg-color;
-        font-family: 'Raleway', sans-serif;
+      display: inline-block;
+      color: $accent-color;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+      text-decoration-line: none;
+      margin-bottom: 20px;
+  
+      @media screen and(min-width:768px) {
         font-size: 26px;
         line-height: 1.2;
-        letter-spacing: 0.03em;
-        text-decoration: none;
+      }
     }
-    &__logo span {
-        color:$accent-color;
+  
+    &__logo--white {
+      color: $primary-bg-color;
     }
-    &__geolocation {
-        margin-top: 20px;
+  
+    &__logo:hover,
+    &__logo:focus {
+      color: $accent-color;
+    }
+  
+    &__contacts-list {
+      list-style: none;
+      margin-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      @media screen and(min-width:768px) {
+        display: block;
+        margin-bottom: 0;
+      }
+    }
+  
+    &__contacts-item:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  
+    &__contacts-link {
+      display: inline-block;
+      color:rgba(255, 255, 255, 0.6);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      transition: color 250ms ;
+    }
+  
+    &__contacts-link:hover,
+    &__contacts-link:focus {
+      color: $accent-color;
+    }
+    &__contacts-adress {
+        display: inline-block;
         color:$title-color;
+        font-style: normal;
+        font-weight: 400;
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
-        font-style: normal;
         text-decoration: none;
-    }
-    &__address{
-        margin-top: 20px;
-    }
-    &__nav{
-        display: flex;
-        flex-direction: column;
-        gap: 9px;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__social{
-        display: flex;
-        height: 80px;
-        width: 206px;
-        align-items: center;
-        margin-left: 70px;
-        gap: 10px;
-        list-style-type: none;
-        list-style: none;
-    }
-    &__contact {
-        color:$footer;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-        font-style: normal;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__contact:hover,
-    &__contact:focus{
-        color: $accent-color;}
+        transition: color 250ms ;
+      }
     
-    &__soc{
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        list-style-type: none;
-        list-style: none;
-        margin-top: 20px;
+      &__contacts-adress:hover,
+      &__contacts-adress:focus {
+        color: $accent-color;
+      }
+  }
+  
+  .footer-container--position {
+    display: flex;
+    background-color: $bg;
+  
+    @media screen and(min-width:768px) {
+      align-items: baseline;
+      background-color: $bg;
     }
-    &__itm{
-        height: 44px;
-        width: 44px;
-        fill:$primary-bg-color;
-        background-color: rgba(255, 255, 255, 0.1);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        transition-property: background-color,fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    @media screen and(max-width:1199px) {
+      align-items: center;
+      background-color: $bg;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
     }
-    &__itm:hover,
-    &__itm:focus{
-        fill:$primary-bg-color;
+  
+    @media screen and(min-width:1200px) {
+      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: center;
+      flex-direction: row;
     }
-    &__itm:hover,
-    &__itm:focus{
-        background-color:$accent-color;
+  }
+  
+  .container-adress {
+    @media screen and(max-width:768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    &__zone{
-        display: flex;
+  
+    @media screen and(max-width:1199px) {
+      text-align: center;
+    }
+  }
+  
+  .footer__container--tablet-position {
+    @media screen and(min-width:768px) {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      gap: 165px;
+  
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    @media screen and(min-width:1200px) {
+      gap: 0;
+      margin-left: 0;
+      margin-right: 0;
+      gap: 82px;
+    }
+  }
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  
+    @media screen and(min-width:1200px) {
+      margin-bottom: 50px;
+     }
+  
+  &__item:not(:last-child) {
+      margin-right: 8px;
+    }
+  
+    &__button {
+    background-color: $accent-color;
+    color: $primary-bg-color;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: transparent;
+    min-width: 73px;
+    max-width: 130px;
+    height: 38px;
+    transition: box-shadow 250ms green,
+    background-color 250ms green, color 250ms green;
+    }
+    &__button--current {
+    background-color: blue;
+    color: red;
+    }
+    &__button:hover,
+    &__button:focus {
+    background-color: blue;
+    color: yellow;
+    box-shadow: violet;
+    }
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+  
+      margin-bottom: 60px;
+  
+      @media screen and(min-width:768px) {
+        margin-bottom: 0;
+      }
+  
+      @media screen and(min-width:1200px) {
+        align-items: flex-start;
+      }
+    }
+  
+    &__subtittle {
+      color: $title-color;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 1.1;
+      letter-spacing: 0.03em;
+      margin-bottom: 20px;
+    }
+  
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      list-style: none;
+    }
+  
+    &__link {
+      width: 44px;
+      height: 44px;
+      fill: $title-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      color: $accent-color;
+      transition: background-color 250ms rgba(255, 255, 255, 0.1);
+    }
+  
+    &__link:hover,
+    &__link:focus {
+      background-color: currentColor;
+    }
+
+  }
+  .subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    @media screen and(min-width:768px) {
+      margin-top: 60px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    @media screen and(min-width:1200px) {
+      width: 570px;
+      height: 86px;
+  
+      margin-top: 0;
+      margin-right: 0;
+      align-items: baseline;
+    }
+  
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+  
+      @media screen and(min-width:1200px) {
+        flex-direction: row;
         align-items: baseline;
+      }
     }
-    &__text{
-        margin: 0px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+  
+    &__label {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $title-color;
     }
-    &__sub{
-        margin-left: 93px;
-    }
-    &__text-subscription{
-        margin-top: 0px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-    
-    }
-    &__control{
-        position: relative;
-        display: flex;
-        gap: 12px;
-    }
-    &__subscription{
+  
+    &__input {
+      padding: 15px 16px 16px 15px;
+      width: 450px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      background-color: $bg;
+      transition: border-color 250ms cubic-bezier((0.4, 0, 0.2, 1));
+      color: $primery-sec;
+      outline: none;
+      margin-bottom: 20px;
+  
+      @media screen and(max-width:479px) {
+        max-width: 290px;
+      }
+  
+      @media screen and(min-width:780px) {
+        width: 450px;
+      }
+  
+      @media screen and(min-width:1200px) {
         width: 358px;
-        margin: 0;
-        height: 50px;
-        padding-left: 16px;
-        color: $title-color;
-        background-color:$bg;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
+      }
     }
-    &__subscription-button{
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-        width: 200px;
-        height: 50px;
-        border: none;
-        font-family: 'Roboto', sans-serif;
-        color:$title-color;
-        background-color:$accent-color;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.8;
-        letter-spacing: 0.06em;
-        border-radius: 4px;
-        cursor: pointer;
+  
+    &__input:hover,
+    &__input:focus {
+      border-color: $accent-color;
     }
-    &__subscription-button:hover
-    &__subscription-button:focus{
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+  
+    &__icon {
+      fill: $title-color;
+      margin-left: 8px;
+  
+      @media screen and(min-width:1200px) {
+        margin-left: 10px;
+      }
     }
+  
+    &__button {
+      background-color: $accent-color;
+      color: $primary-bg-color;
+      font-weight: 700;
+      font-size: 16px;
+      font-family: inherit;
+      line-height: 1.9;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      min-width: 200px;
+      height: 50px;
+      margin-right: 0;
+      padding: 10px 32px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border: transparent;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: box-shadow 250ms cubic-bezier((0.4, 0, 0.2, 1))
+        background-color 250ms cubic-bezier((0.4, 0, 0.2, 1));
+  
+      @media screen and(min-width:1199px) {
+        margin-left: 12px;
+      }
     }
+  
+    &__button:hover,
+    &__button:focus {
+      background-color: $object-color;
+    }
+  }
+  
+
+  
+  
+  

@@ -23,11 +23,23 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .container {
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+
+    }
+    @media screen and (min-width: 1600px) {
+        width: 1600px;
+
+    }
 }
 h1
 h2
@@ -53,7 +65,7 @@ img{
     display: block;
     max-width: 100%;
 }
-%visually-hidden{
+.visually-hidden{
     margin-top: 0px;
     margin-bottom: 0px;
     height: 1px;
