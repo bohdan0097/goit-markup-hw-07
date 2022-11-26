@@ -93,24 +93,7 @@ header{border-bottom: 1px solid $border;}
         align-content: center;
 
     }
-    &__burger-menu{
-        position: absolute;
-        top: 22px;
-        right: 22px;
-        padding: 0;
-        cursor: pointer;
-        border-radius: none;
 
-        @media (min-width:481px) {
-            display: none;
-        }
-        }
-        @media (max-width:480px) {
-            border-radius: none;
-            display: flex;
-            justify-content: space-between;
-            
-    }
     &__address-icon{
         display: flex;
         justify-content: center;

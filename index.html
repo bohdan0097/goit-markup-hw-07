@@ -30,10 +30,15 @@
             <li><a href="#" class="header__link">Контакти</a></li>
           </ul> 
         </nav>
-        <button tape="button"class="header__burger-menu js-open-menu">
-          <svg  width="40"height="40">
-            <use  href="./images/symbol-defs.svg#icon-menu_40px-1"></use>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle__icon-menu" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
           </svg>
+        </button>
         </button>
         <ul class="contacts-list">
           <li class="contacts-list__item">
