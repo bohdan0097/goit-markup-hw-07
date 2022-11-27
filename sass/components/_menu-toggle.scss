@@ -167,6 +167,7 @@
   text-decoration: none;
 }
 .social-networks {
+  gap: 10px;
   display: flex;
   text-decoration: none;
   margin-bottom: 0;
@@ -175,7 +176,6 @@
   list-style: none;
   text-decoration: none;
   margin-top: 64px;
-  gap: 5px;
 }
 
 .social-networks__item {
