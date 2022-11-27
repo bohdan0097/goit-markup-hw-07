@@ -1,4 +1,5 @@
 .menu-container {
+  overflow: none scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -33,9 +34,6 @@
   overflow: auto;
   transform: translateX(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media (min-width:481px) {
-    display: none;
-  }
 }
 
 .menu-toggle {
@@ -150,14 +148,17 @@
 }
 
 .additional-info__tel {
+  display: flex;
   color: $accent-color;
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.2;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 .additional-info__mail {
+  display: flex;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2;

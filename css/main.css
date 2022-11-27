@@ -1717,6 +1717,7 @@ header {
 }
 
 .menu-container {
+  overflow: none scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -1769,11 +1770,6 @@ header {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media (min-width: 481px) {
-  .menu-container__position {
-    display: none;
-  }
 }
 
 .menu-toggle {
@@ -1913,15 +1909,22 @@ header {
 }
 
 .additional-info__tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #2196F3;
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.2;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
 .additional-info__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2;
