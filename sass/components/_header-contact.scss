@@ -15,14 +15,25 @@
     &__item:not(:last-child) {
       @media screen and(min-width:768px) and(max-width:1199px) {
         margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
       }
   
       @media screen and(min-width:1200px) {
         margin-right: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-left: auto;
       }
     }
   
     &__link {
+      padding: 0;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      padding-bottom: 10px;
       color: $primery-sec;
       font-weight: 500;
       font-size: 14px;
